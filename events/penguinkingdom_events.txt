@@ -1,0 +1,37 @@
+add_namespace = mod_event
+
+country_event ={
+    id = mod_event.1
+    title = mod_event.1.t
+    desc = mod_event.1.d
+    picture = GFX_report_event_generic_read_write
+
+    #is_triggered_only = yes
+
+trigger = {
+    is_ai = no
+}
+
+mean_time_to_happen = {
+    days = 100
+}
+fire_only_once = yes
+
+option = {
+    name = mod_event.1.a
+    if = {
+        limit = {
+            has_war = yes
+        }
+        every_other_country = {
+            limit = {
+                has_war_with = ROOT
+            }
+            add_ideas = penguins_support
+        }
+        else = {
+            add_ideas = penguins_support
+        }
+    }
+}
+}

@@ -1,0 +1,16 @@
+focus_tree = {
+id = penguin_kingdom_focus
+
+country = {
+factor = 0
+
+modifier = {
+add = 10
+tag = PEK
+}
+}
+    focus = {
+        id = PEK_focus_1
+        icon_GFX
+    }
+}

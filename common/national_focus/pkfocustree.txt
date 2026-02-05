@@ -14,3 +14,45 @@ tag = PEK
         icon_GFX
     }
 }
+
+######
+######
+######
+
+focus = {
+    id = ARG_the_start_of_the_nation
+    icon = GFX_goal_generic_political_reform
+    cost = 5
+
+    x = 0
+    y = 1
+
+    available = {
+        original_tag = PEK
+    }
+
+    completion_reward = {
+        add_political_power = 111
+    }
+}
+
+focus = {
+    id = PEK_expand_civilian_industry
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 5
+
+    x = 0
+    y = 0
+
+    available = {
+        original_tag = PEK
+    }
+
+    completion_reward = {
+        add_building_construction = {
+            type = industrial_complex
+            level = 2
+            instant_build = yes
+        }
+    }
+}

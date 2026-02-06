@@ -111,7 +111,7 @@ focus = {
 focus = {
     id = PEK_building_up_the_military
     icon = GFX_goal_generic_construct_mil_factory
-    cost = 8
+    cost = 7
 
     x = 2
     y = 2

@@ -80,7 +80,7 @@ focus = {
 focus = {
     id = PEK_rebuilding_the_nation
     icon = GFX_goal_generic_construct_civ_factory
-    cost = 10
+    cost = 7
 
     x = 0
     y = 2

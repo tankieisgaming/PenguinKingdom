@@ -36,6 +36,11 @@ focus = {
     }
 }
 
+  ##    #   #     #
+ #           #   #
+ #      #     # #
+  ##    #      #
+
 focus = {
     id = PEK_expand_civilian_industry
     icon = GFX_goal_generic_construct_civ_factory

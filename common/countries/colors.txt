@@ -1,0 +1,6 @@
+#reload countrycolors
+
+PEK = {
+    color =  rgb (255 255 255)
+    color_ui = rgb (240 245 240)
+}

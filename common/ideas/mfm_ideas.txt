@@ -14,6 +14,10 @@ ideas = {
         Thumbless_hands = {
             picture = factory_output
 
+            allowed = {
+                original_tag = PEK
+            }
+
             modifier = {
                 factory_output = -0,5 
             }
@@ -22,7 +26,12 @@ ideas = {
 
     country = {
         scattered_pinguins
-           
+           icon = GFX_idea_generic_population
+
+
+            allowed = {
+                original_tag = PEK
+            }
 
            modifier = {
             reccruitable_population_factor = -0,6

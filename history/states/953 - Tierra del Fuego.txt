@@ -1,0 +1,40 @@
+state = {
+	id = 953
+	name = "STATE_953"
+	manpower = 80765
+	
+	state_category = pastoral
+	
+	resources = {
+		oil = 3
+		steel = 6
+		aluminimum = 2
+		coal = 20
+	}
+
+	history = {
+
+		owner = PEK
+		add_core_of = PEK
+		add_claim_by = CHL
+		add_core_of = WLA
+
+		buildings = {
+			infrastructure = 0
+			13300 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			13300 25 
+		}
+		
+	}
+
+	provinces = {
+		11009 13299 13300
+	}
+
+	local_supplies = 0.0 
+}

@@ -3,7 +3,7 @@ state = {
 	name = "STATE_953"
 	manpower = 80765
 	
-	state_category = pastoral
+	state_category = urban
 	
 	resources = {
 		oil = 3
@@ -16,8 +16,8 @@ state = {
 
 		owner = PEK
 		add_core_of = PEK
-		add_claim_by = CHL
-		add_core_of = WLA
+		add_claim_by = PEK
+		add_core_of = PEK
 
 		buildings = {
 			infrastructure = 0

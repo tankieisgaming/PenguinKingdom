@@ -25,7 +25,7 @@ focus = {
     cost = 5
 
     x = 0
-    y = 1
+    y = 0
 
     available = {
         original_tag = PEK
@@ -36,18 +36,48 @@ focus = {
     }
 }
 
+
+
+
   ##    #   #     #
  #           #   #
  #      #     # #
   ##    #      #
 
+
+
+
+
+
+
 focus = {
-    id = PEK_expand_civilian_industry
+    id = PEK_rebuilding_the_nation
+    icon = GFX_goal_generic_construct_civ_factory
+    cost = 7
+
+    x = 0
+    y = 1
+    available = {
+        original_tag = PEK
+    }
+
+    completion_reward = {
+        add_extra_state_shared_building_slots = 3
+        add_building_construction = {
+            type = industrial_complex 
+            level = 3
+            instant_build = yes
+        }
+    }
+}
+
+focus = {
+    id = PEK_expand_existing_factories
     icon = GFX_goal_generic_construct_civ_factory
     cost = 5
 
-    x = 0
-    y = 0
+    x = 1
+    y = 2
 
     available = {
         original_tag = PEK
@@ -63,22 +93,85 @@ focus = {
     }
 }
 
-focus = {
-    id = PEK_rebuilding_the_nation
-    icon = GFX_goal_generic_construct_civ_factory
-    cost = 7
 
-    x = 0
-    y = 2
+focus = {
+    id = PEK_we_need_some_roads
+    icon = GFX_goal_generic_construct_infrastructure
+    cost = 7
+    mutually_exclusive = PEK_build_up_the_countryside
+
+    x = 1
+    y = 3
+
     available = {
         original_tag = PEK
     }
 
     completion_reward = {
-        add_extra_state_shared_building_slots = 3
+        capital_scope = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+    }
+}
+
+
+
+focus = {
+    id = PEK_build_up_the_countryside
+    icon = GFX_goal_generic_construct_infrastructure
+    cost = 7
+    mutually_exclusive = PEK_we_need_some_roads
+
+    x = 2
+    y = 3
+
+    available = {
+        original_tag = PEK
+    }
+
+        ccompletion_reward = {
+        954 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+
+                completion_reward = {
+        953 = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+                }
+            }
+        }
+    }
+}
+
+focus = {
+    id = PEK_industrial_boost
+    icon = GFX_goal_generic_industry
+    cost = 6
+
+    x = 2
+    y = 4
+
+    available = {
+        original_tag = PEK
+    }
+
+    completion_reward = {
+        add_ideas = PEK_factory_output_boost
+
         add_building_construction = {
-            type = industrial_complex 
-            level = 3
+            type = industrial_complex
+            level = 1
             instant_build = yes
         }
     }
@@ -92,8 +185,11 @@ focus = {
 #  #  #   #    # ##    
 
 
+
+
+
 focus = {
-    id = PEK_expand_military_industry
+    id = PEK_starting_military_construction
     icon = GFX_goal_generic_construct_mil_factory
     cost = 4
 
@@ -113,8 +209,9 @@ focus = {
     }
 }
 
+
 focus = {
-    id = PEK_building_up_the_military
+    id = PEK_continuing_building_up_the_military
     icon = GFX_goal_generic_construct_mil_factory
     cost = 7
 
@@ -125,10 +222,10 @@ focus = {
     }
 
     completion_reward = {
-        add_extra_state_shared_building_slots = 4
+        add_extra_state_shared_building_slots = 3
         add_building_construction = {
             type = arms_factory 
-            level = 4
+            level = 3
             instant_build = yes
         }
     }

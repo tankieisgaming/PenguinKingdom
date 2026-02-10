@@ -10,3 +10,14 @@ ideas = {
         }
     }
 }
+
+PEK_factory_output_boost = {
+    icon = GFX_idea_generic_industry
+    allowed = {
+        original_tag = PEK
+    }
+
+    modifier = {
+        factory_output = 0.25
+    }
+}

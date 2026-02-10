@@ -1,13 +1,32 @@
 ideas = {
 
     country = {
-        Penguins_support ={
+        Penguins_support = {
             picture = generic_pp_unity_bonus
 
             modifier = {
                 political_power_gain = 0.25
             }
         }
+    }
+
+    country = {
+        Thumbless_hands = {
+            picture = factory_output
+
+            modifier = {
+                factory_output = -0,5 
+            }
+        }
+    }
+
+    country = {
+        scattered_pinguins
+           
+
+           modifier = {
+            reccruitable_population_factor = -0,6
+           }
     }
 }
 

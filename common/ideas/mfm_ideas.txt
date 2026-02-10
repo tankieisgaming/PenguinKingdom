@@ -37,6 +37,10 @@ ideas = {
             reccruitable_population_factor = -0,6
            }
     }
+
+    country = {
+        
+    }
 }
 
 PEK_factory_output_boost = {

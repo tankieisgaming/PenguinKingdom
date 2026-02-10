@@ -15,9 +15,13 @@ tag = PEK
     }
 }
 
-######
-###### 
-######
+
+ ##   ##   #   #
+#    #  #  #  #
+#  # #  #  # #
+ ##   ##    #
+
+
 
 focus = {
     id = ARG_the_start_of_the_nation
@@ -133,7 +137,7 @@ focus = {
         original_tag = PEK
     }
 
-        ccompletion_reward = {
+        completion_reward = {
         954 = {
             add_building_construction = {
                 type = infrastructure

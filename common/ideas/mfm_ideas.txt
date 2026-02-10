@@ -46,6 +46,17 @@ PEK_factory_output_boost = {
     }
 
     modifier = {
+        factory_output = 0.15
+    }
+}
+
+ARG_factory_output_25 = {
+    icon = GFX_idea_generic_industry
+    allowed = {
+        original_tag = PEK
+    }
+
+    modifier = {
         factory_output = 0.25
     }
 }

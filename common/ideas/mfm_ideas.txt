@@ -40,6 +40,15 @@ ideas = {
 
     PEK_reunified_pinguins = {
         icon = generic_manpower
+
+         allowed = {
+                original_tag = PEK
+            }
+        
+        modifier = {
+            recruitable_population_factor = 0,25
+            recruitable_population = 0,05
+        }
     }
 }
 

@@ -5,9 +5,9 @@ state = {
 	state_category = urban
 	
 	resources = {
-		oil = 3
-		steel = 6
-		aluminium = 2
+		oil = 5
+		steel = 117
+		aluminium = 5
 	}
 
 	history = {

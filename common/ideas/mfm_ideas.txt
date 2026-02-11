@@ -38,6 +38,17 @@ ideas = {
            }
     }
 
+    country = {
+        wasted_infrastructure
+        icon = generic_infrastructure
+
+         allowed = {
+                original_tag = PEK
+            }
+
+        
+    }
+
     PEK_reunified_pinguins = {
         icon = generic_manpower
 

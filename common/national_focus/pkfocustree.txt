@@ -310,7 +310,7 @@ focus = {
 
     available = {
         tag = PEK
-        CHI = { exists = no } # Chile must be annexed
+        CHI = { exists = no }
     }
 
     completion_reward = {
@@ -331,5 +331,142 @@ focus = {
 
     ai_will_do = {
         factor = 1.5
+    }
+}
+
+
+
+focus = {
+    id = PEK_claim_argentina
+    icon = GFX_goal_generic_major_war
+    x = 10
+    y = 5
+    cost = 6
+
+    prerequisite = { focus = CHI_political_effort }
+
+    available = {
+        tag = PEK
+        ARG = { exists = yes }
+        NOT = { has_war_with = ARG }
+    }
+
+    completion_reward = {
+        create_wargoal = {
+            type = annex_everything
+            target = ARG
+        }
+
+        add_stability = -0.05
+        add_war_support = 0.1
+        add_political_power = 50
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+
+focus = {
+    id = PEK_invade_peru
+    icon = GFX_goal_generic_major_war
+    x = 13
+    y = 7
+    cost = 10
+
+    prerequisite = { focus = ARG_integrate_chile }
+
+    available = {
+        tag = PEK
+        PER = { exists = yes }
+        NOT = { has_war_with = PER }
+    }
+
+    completion_reward = {
+
+        create_wargoal = {
+            type = annex_everything
+            target = PER
+        }
+
+        add_war_support = 0.1
+        add_stability = -0.05
+        add_political_power = 75
+    }
+
+    ai_will_do = {
+        factor = 1.2
+    }
+}
+
+
+focus = {
+    id = PEK_integrate_peru_coast
+    icon = GFX_goal_generic_propaganda
+    x = 14
+    y = 8
+    cost = 10
+
+    prerequisite = { focus = PEK_invade_peru }
+
+    available = {
+        tag = PEK
+        PER = { exists = no }
+    }
+
+    completion_reward = {
+
+        # Tumbes
+        if = {
+            limit = { owns_state = 493 }
+            493 = {
+                add_core_of = PEK
+                add_resistance = -25
+            }
+        }
+
+        # Piura
+        if = {
+            limit = { owns_state = 492 }
+            492 = {
+                add_core_of = PEK
+                add_resistance = -25
+            }
+        }
+
+        # Lima
+        if = {
+            limit = { owns_state = 495 }
+            495 = {
+                add_core_of = PEK
+                add_resistance = -25
+            }
+        }
+
+        # Ica
+        if = {
+            limit = { owns_state = 496 }
+            496 = {
+                add_core_of = PEK
+                add_resistance = -25
+            }
+        }
+
+        # Arequipa (zuidkust)
+        if = {
+            limit = { owns_state = 497 }
+            497 = {
+                add_core_of = PEK
+                add_resistance = -25
+            }
+        }
+
+        add_stability = 0.1
+        add_political_power = 75
+    }
+
+    ai_will_do = {
+        factor = 1.3
     }
 }

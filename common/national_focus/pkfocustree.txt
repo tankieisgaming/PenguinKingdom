@@ -16,10 +16,14 @@ tag = PEK
 }
 
 
+
+
  ##   ##   #   #
 #    #  #  #  #
 #  # #  #  # #
  ##   ##    #
+
+
 
 
 
@@ -212,6 +216,7 @@ focus = {
 
 
 
+
 #######   #    #  
 #  #  #        #  
 #  #  #   #    #   
@@ -265,10 +270,21 @@ focus = {
 }
 
 
+
+
 #     #     #   #    ###
  #   # #   #   # #   #  #
   # #   # #   #####  ###
    #     #    #   #  #  #
+
+
+
+
+####          #
+  #          # #
+ #    ###   #####
+####        #   #
+
 
 
 
@@ -468,5 +484,131 @@ focus = {
 
     ai_will_do = {
         factor = 1.3
+    }
+}
+
+
+
+
+
+  #    ####  ###   #   ###    #
+ # #   #     #  #  #  #      # #
+#####  ###   ###   #  #     #####
+#   #  #     #  #  #   ###  #   #
+
+
+
+
+
+focus = {
+    id = PEK_claim_namibia_southafrica
+    icon = GFX_goal_generic_major_war
+    x = 10
+    y = 5
+    cost = 10
+
+    prerequisite = { focus = XXX_military_expansion } 
+
+    available = {
+        tag = PEK
+        NAM = { exists = yes }
+        ZAF = { exists = yes }
+        NOT = { has_war_with = NAM }
+        NOT = { has_war_with = ZAF }
+    }
+
+    completion_reward = {
+        create_wargoal = {
+            type = annex_everything
+            target = NAM
+        }
+
+        create_wargoal = {
+            type = annex_everything
+            target = ZAF
+        }
+
+        add_stability = -0.05
+        add_war_support = 0.1
+        add_political_power = 100
+    }
+
+    ai_will_do = {
+        factor = 1.5
+    }
+}
+
+
+
+  #    ####  #  ####
+ # #     #   #  ##
+#####   #    #  #
+#   #  ####  #  ####
+
+
+
+
+focus = {
+    id = PEK_claim_australia
+    icon = GFX_goal_generic_major_war
+    x = 10
+    y = 5
+    cost = 10
+
+    prerequisite = { focus = XXX_military_expansion } 
+
+    available = {
+        tag = PEK
+        AUS = { exists = yes }
+        NOT = { has_war_with = AUS }
+    }
+
+    completion_reward = {
+
+        create_wargoal = {
+            type = annex_everything
+            target = AUS
+        }
+
+        add_stability = -0.05
+        add_war_support = 0.1
+        add_political_power = 100
+    }
+
+    ai_will_do = {
+        factor = 1.5
+    }
+}
+
+
+focus = {
+    id = PEK_claim_new_zealand
+    icon = GFX_goal_generic_major_war
+    x = 11
+    y = 6
+    cost = 10
+
+    prerequisite = { focus = PEK_claim_australia }
+
+    available = {
+        tag = PEK
+        NZL = { exists = yes }
+        NOT = { has_war_with = NZL }
+    }
+
+    completion_reward = {
+
+        create_wargoal = {
+            type = annex_everything
+            target = NZL
+        }
+
+        add_stability = -0.05
+        add_war_support = 0.1
+        add_political_power = 50
+    }
+
+    ai_will_do = {
+        factor = 1.5
     }
 }

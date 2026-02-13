@@ -263,3 +263,73 @@ focus = {
         }
     }
 }
+
+
+#     #     #   #    ###
+ #   # #   #   # #   #  #
+  # #   # #   #####  ###
+   #     #    #   #  #  #
+
+
+
+focus = {
+    id = PEK_claim_chile
+    icon = GFX_goal_generic_territory_or_war
+    x = 10
+    y = 5
+    cost = 9
+
+    prerequisite = 
+    available = {
+        tag = PEK
+        CHI = { exists = yes }
+        NOT = { has_war_with = CHI }
+    }
+
+    completion_reward = {
+        create_wargoal = {
+            type = annex_everything
+            target = CHI
+        }
+        add_political_power = 50
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+focus = {
+    id = PEK_integrate_chile
+    icon = GFX_goal_generic_propaganda
+    x = 12
+    y = 7
+    cost = 10
+
+    prerequisite = { focus = PEK_claim_chile }
+
+    available = {
+        tag = PEK
+        CHI = { exists = no } # Chile must be annexed
+    }
+
+    completion_reward = {
+
+        every_owned_state = {
+            limit = {
+                is_core_of = CHI
+            }
+            add_core_of = PEK
+            add_resistance = -25
+        }
+
+   
+        add_stability = 0.1
+
+        add_political_power = 50
+    }
+
+    ai_will_do = {
+        factor = 1.5
+    }
+}

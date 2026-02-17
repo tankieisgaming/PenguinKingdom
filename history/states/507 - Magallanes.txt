@@ -1,0 +1,37 @@
+state = {
+	id = 507
+	name = "STATE_507"
+	manpower = 687009	
+	state_category = urban
+	
+	resources = {
+        chromium = 10
+		steel = 65
+	}
+
+	history = {
+
+		owner = PEK
+		add_core_of = PEK
+		add_claim_by = PEK
+		add_core_of = PEK
+
+		buildings = {
+			infrastructure = 4
+			5215 = {
+				naval_base = 1
+			}
+		}
+
+		victory_points = {
+			5215 5 
+		}
+		
+	}
+
+	provinces = {
+		5215 5201 5209 8218 8913
+	}
+
+	local_supplies = 10.0 
+}

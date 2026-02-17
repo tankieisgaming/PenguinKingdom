@@ -1,0 +1,36 @@
+state = {
+	id = 949
+	name = "STATE_949"
+	manpower = 34389
+	state_category = pastoral
+	
+	resources = {
+		oil = 5
+		steel = 117
+		aluminium = 5
+	}
+
+	history = {
+
+		owner = PEK
+		add_core_of = PEK
+		add_claim_by = PEK
+		add_core_of = PEK
+
+		buildings = {
+			infrastructure = 4
+		    
+			}
+		}
+
+		victory_points = {
+			2161 25 
+		}
+		
+
+	provinces = {
+		2161 5118 5159 8198 10961 13295
+	}
+
+	local_supplies = 10.0 
+}

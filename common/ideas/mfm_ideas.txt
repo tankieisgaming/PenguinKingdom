@@ -45,8 +45,23 @@ ideas = {
          allowed = {
                 original_tag = PEK
             }
-
         
+        modifier = {
+            infrastructure_building_speed = -0,9
+        }
+    }
+
+    country = {
+        what_are_factories
+        icon = GFX_goal_generic_industry
+
+        allowed = {
+            original_tag = PEK
+        }
+        modifier = {
+            factory_output = -0,5
+            
+        }
     }
 
     PEK_reunified_pinguins = {

@@ -728,12 +728,12 @@ focus = {
             type = arms_factory
             level = 4
         }
-
-        ai_will_do = {
+    }
+     ai_will_do = {
             factor = 10
         }
-    }
 }
+
 
 focus = {
     id = ARG_extend_pilot_training
@@ -749,6 +749,10 @@ focus = {
         air_night_factor = 0,5
         air_experience_facto = -0,5
     }
+    
+     ai_will_do = {
+            factor = 10
+        }
 }
 
 focus = {
@@ -768,4 +772,8 @@ focus = {
             level = 3
         }
     }
+    
+     ai_will_do = {
+            factor = 10
+        }
 }

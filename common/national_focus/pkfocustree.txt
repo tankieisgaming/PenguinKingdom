@@ -553,7 +553,7 @@ focus = {
     icon = GFX_goal_generic_major_war
     x = 10
     y = 5
-    cost = 10
+    cost = 4
 
     prerequisite = { focus = XXX_military_expansion } 
 
@@ -586,7 +586,7 @@ focus = {
     icon = GFX_goal_generic_major_war
     x = 11
     y = 6
-    cost = 10
+    cost = 5
 
     prerequisite = { focus = PEK_claim_australia }
 
@@ -653,7 +653,7 @@ focus = {
     icon = GFX_goal_generic_small_arms
     x = 10
     y = 5
-    cost = 10
+    cost = 4
 
     available = { original_tag = PEK }
     prerequisite = { focus = PEK_make_a_military }
@@ -687,7 +687,7 @@ focus = {
     icon = GFX_goal_generic_construct_naval_dockyard
     x = 10
     y = 5
-    cost = 10
+    cost = 6
 
     available = { original_tag = PEK }
     prerequisite = { focus = PEK_make_a_military }
@@ -719,7 +719,7 @@ focus = {
     icon = GFX_goal_generic_construct_mil_factory
     x = 15
     y = 8
-    cost = 10
+    cost = 5
 
     available = { original_tag = PEK}
 

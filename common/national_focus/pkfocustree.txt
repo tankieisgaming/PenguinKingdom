@@ -751,7 +751,7 @@ focus = {
     }
     
      ai_will_do = {
-            factor = 10
+            factor = 1
         }
 }
 
@@ -774,6 +774,6 @@ focus = {
     }
     
      ai_will_do = {
-            factor = 10
+            factor = 1
         }
 }

@@ -747,7 +747,7 @@ focus = {
     completion_reward = {
         air_attack_factor = 0,5
         air_night_factor = 0,5
-        air_experience_facto = -0,5
+        air_experience_factor = -0,5
     }
     
      ai_will_do = {

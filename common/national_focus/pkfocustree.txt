@@ -747,7 +747,7 @@ focus = {
     completion_reward = {
         air_attack_factor = 0,5
         air_night_factor = 0,5
-        air_experience_factor = -0,5
+        air_experience_factor = -0,05
     }
     
      ai_will_do = {
@@ -776,4 +776,21 @@ focus = {
      ai_will_do = {
             factor = 1
         }
+}
+
+focus = {
+    id =  Expand_air_bases
+    icon = GFX_goal_generic_construct_air_base
+    x = 15
+    y = 10
+    cost = 2
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_building_construction = {
+            type = air_base
+            level 5
+        }
+    }
 }

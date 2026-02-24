@@ -19,7 +19,7 @@ ideas = {
             }
 
             modifier = {
-                factory_output = -0,5 
+                factory_output = -0.5 
             }
         }
     }
@@ -34,7 +34,7 @@ ideas = {
             }
 
            modifier = {
-            reccruitable_population_factor = -0,6
+            reccruitable_population_factor = -0.6
            }
     }
 
@@ -47,7 +47,7 @@ ideas = {
             }
         
         modifier = {
-            infrastructure_building_speed = -0,9
+            infrastructure_building_speed = -0.9
         }
     }
 
@@ -59,7 +59,7 @@ ideas = {
             original_tag = PEK
         }
         modifier = {
-            factory_output = -0,5
+            factory_output = -0.5
             
         }
     }
@@ -72,8 +72,8 @@ ideas = {
             }
         
         modifier = {
-            recruitable_population_factor = 0,25
-            recruitable_population = 0,05
+            recruitable_population_factor = 0.25
+            recruitable_population = 0.05
         }
     }
 }

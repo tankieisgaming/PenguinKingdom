@@ -11,7 +11,7 @@ tag = PEK
 }
     focus = {
         id = PEK_focus_1
-        icon_GFX
+        icon = GFX_goal_generic_political_reform
     }
 }
 
@@ -745,9 +745,9 @@ focus = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        air_attack_factor = 0,5
-        air_night_factor = 0,5
-        air_experience_factor = -0,05
+        air_attack_factor = 0.5
+        air_night_factor = 0.5
+        air_experience_factor = -0.05
     }
     
      ai_will_do = {
@@ -765,8 +765,8 @@ focus = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        production_factory_max_efficiency_factor = 0,5
-        production_factory_efficiency_gain_factor = 0,5
+        production_factory_max_efficiency_factor = 0.5
+        production_factory_efficiency_gain_factor = 0.5
         add_building_construction = {
             type = arms_factory
             level = 3

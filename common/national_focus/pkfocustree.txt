@@ -706,7 +706,67 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_expand_the_navy
+    icon = GFX_goal_generic_construct_naval_dockyard
+    x = 10
+    y = 6
+    cost = 10
 
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_building_construction = {
+            type = dockyard
+            level = 4
+            instant_build = yes
+        }
+        naval_dockyard_output_factor = 0.5
+    }
+}
+
+focus = {
+    id = PEK_better_materials
+    x = 11
+    y = 7
+    cost = 14
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        light_attack_factor = 0.3
+        ship_armor_factor = 0.9
+    }
+}
+
+focus = {
+    id = PEK_submarines_expansions
+    x = 13
+    y = 8
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = sub_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+    }
+}
+
+focus = {
+    id = PEK_capital_ships_buildup
+    x = 11
+    y = 8
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+
+    }
+}
 
 
   #    #  ###  

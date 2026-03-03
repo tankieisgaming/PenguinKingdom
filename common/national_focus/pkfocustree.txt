@@ -391,7 +391,7 @@ focus = {
     y = 7
     cost = 10
 
-    prerequisite = { focus = ARG_integrate_chile }
+    prerequisite = { focus = PEK_integrate_chile }
 
     available = {
         tag = PEK
@@ -660,7 +660,7 @@ focus = {
 
     completion_reward = {
           add_tech_bonus = 
-            name = ARG_infantry_bonus
+            name = PEK_infantry_bonus
             bonus = 0.75
             uses = 2
             category = infantry_weapons
@@ -715,7 +715,7 @@ focus = {
 #   #  #  #  #
 
 focus = {
-    id = ARG_start_the_air
+    id = PEK_start_the_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 15
     y = 8
@@ -736,7 +736,7 @@ focus = {
 
 
 focus = {
-    id = ARG_extend_pilot_training
+    id = PEK_extend_pilot_training
     icon = GFX_goal_generic_pilot_training
     x = 16
     y = 9
@@ -756,7 +756,7 @@ focus = {
 }
 
 focus = {
-    id = ARG_increase_production_of_air
+    id = PEK_increase_production_of_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 14
     y = 9
@@ -793,4 +793,6 @@ focus = {
             level 5
         }
     }
+
+    ai_will_do = 1
 }

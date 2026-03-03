@@ -1,3 +1,10 @@
-
-
-ARG_the_start_of_the_nation
+PEK_the_start_of_the_nation:0 "The start of our nation"
+PEK_the_start_of_the_nation_desc:0 "WIP"
+PEK_rebuilding_the_nation:0 "We must (re)build these lands"
+PEK_rebuilding_the_nation_desc:0 "WIP"
+PEK_expand_existing_factories:0 "Expand on the existing factories"
+PEK_expand_existing_factories_desc:0 "WIP"
+PEK_we_need_some_roads:0 "We neeeeeed some roads!"
+PEK_we_need_some_roads_desc:0 "WIP"
+PEK_capital_industrial_push:0 ""
+PEK_capital_industrial_push_desc:0 ""

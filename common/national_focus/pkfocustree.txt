@@ -1094,7 +1094,26 @@ focus = {
     id = bigger_bombs_on_bigger_planes
     icon = GFX_goal_generic_air
     x = 16
-    y = 13
+    y = 17
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = strategic_bomber
+        }
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_bomb
+        }
+        add_air_experience = 50
+    }
 }
 
 

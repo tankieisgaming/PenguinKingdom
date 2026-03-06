@@ -507,7 +507,7 @@ focus = {
     y = 5
     cost = 10
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_integrate_peru_coast } 
 
     available = {
         tag = PEK
@@ -555,7 +555,7 @@ focus = {
     y = 5
     cost = 4
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_integrate_peru_coast } 
 
     available = {
         tag = PEK

@@ -668,8 +668,8 @@ focus = {
 
         add_core_of = 723
         add_core_of = 724
-        723 = { add_resistance = -20 }
-        724 = { add_resistance = -20 }
+        723 = { add_resistance = -25 }
+        724 = { add_resistance = -25 }
 
         723 = { add_compliance = 20 }
         724 = { add_compliance = 20 }
@@ -680,10 +680,61 @@ focus = {
         factor = 1
 }
 
+ocus = {
+    id = PEK_integrate_australia
+    icon = GFX_goal_generic_improve_relations
+    x = 13
+    y = 6
+    cost = 10
+
+    prerequisite = { focus = PEK_integrate_new_zealand }
+
+
+    completion_reward = {
+
+        add_political_power = 120
+        add_stability = 0.05
+
+        add_core_of = 519
+        add_core_of = 520
+        add_core_of = 521
+        add_core_of = 522
+        add_core_of = 523
+        add_core_of = 524
+
+        519 = { add_resistance = -25 }
+        520 = { add_resistance = -25 }
+        521 = { add_resistance = -25 }
+        522 = { add_resistance = -25 }
+        523 = { add_resistance = -25 }
+        524 = { add_resistance = -25 }
+
+        519 = { add_compliance = 20 }
+        520 = { add_compliance = 20 }
+        521 = { add_compliance = 20 }
+        522 = { add_compliance = 20 }
+        523 = { add_compliance = 20 }
+        524 = { add_compliance = 20 }
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+
+
+
+
+
   #    ###   ##   ##  #   #
  # #   #  #  # # # #   # #
 #####  ###   #  #  #    #
 #   #  #  #  #  #  #    #
+
+
+
+
 
 focus = {
     id = PEK_make_a_military

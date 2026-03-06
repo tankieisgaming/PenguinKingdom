@@ -1096,3 +1096,6 @@ focus = {
     x = 16
     y = 13
 }
+
+
+#BOOM focus

@@ -20,7 +20,11 @@ ideas = {
             }
 
             modifier = {
+<<<<<<< HEAD
                 industrial_capacity = -0.5 
+=======
+                factory_output = -0.5 
+>>>>>>> 67cfbcbb779bd63705777951fd7e619502c80824
             }
         }
     
@@ -49,7 +53,10 @@ ideas = {
         
         modifier = {
             infrastructure_building_speed = -0.9
+<<<<<<< HEAD
         }
+=======
+>>>>>>> 67cfbcbb779bd63705777951fd7e619502c80824
         }
 
     
@@ -73,8 +80,8 @@ ideas = {
             }
         
         modifier = {
-            recruitable_population_factor = 0.25
-            recruitable_population = 0.05
+            recruitable_population_factor = -.25
+            recruitable_population = -0.05
         }
         }
     

@@ -11,7 +11,11 @@ tag = PEK
 }
     focus = {
         id = PEK_focus_1
+<<<<<<< HEAD
         icon = GFX_generic_political_reform
+=======
+        icon = GFX_goal_generic_political_reform
+>>>>>>> 67cfbcbb779bd63705777951fd7e619502c80824
     }
 }
 
@@ -28,7 +32,7 @@ tag = PEK
 
 
 focus = {
-    id = ARG_the_start_of_the_nation
+    id = PEK_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
     cost = 5
 
@@ -391,7 +395,7 @@ focus = {
     y = 7
     cost = 10
 
-    prerequisite = { focus = ARG_integrate_chile }
+    prerequisite = { focus = PEK_integrate_chile }
 
     available = {
         tag = PEK
@@ -507,7 +511,7 @@ focus = {
     y = 5
     cost = 10
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_integrate_peru_coast } 
 
     available = {
         tag = PEK
@@ -538,6 +542,48 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_unify_africa
+    icon = GFX_goal_generic_political_pressure
+    x = 10
+    y = 5
+    cost = 8
+
+    prerequisite = { focus = PEK_claim_namibia_southafrica }
+
+    available = {
+        OR = {
+            tag = SAF
+            tag = NAM
+        }
+    }
+
+    completion_reward = {
+
+        add_political_power = 50
+        add_stability = 0.05
+
+        add_core_of = 541
+        add_core_of = 544
+        add_core_of = 545
+        add_core_of = 546
+
+        add_claim_by = ROOT
+        541 = { add_resistance = -20 }
+        544 = { add_resistance = -20 }
+        545 = { add_resistance = -20 }
+        546 = { add_resistance = -20 }
+
+        if = {
+            limit = { tag = PEK }
+            set_cosmetic_tag = PEK_UNIFIED
+        }
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
 
 
   #    ####  #  ####
@@ -555,7 +601,7 @@ focus = {
     y = 5
     cost = 4
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_integrate_peru_coast } 
 
     available = {
         tag = PEK
@@ -613,12 +659,86 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_integrate_new_zealand
+    icon = GFX_goal_generic_major_alliance
+    x = 12
+    y = 6
+    cost = 10
+
+    prerequisite = { focus = PEK_claim_australia }
+
+    completion_reward = {
+
+        add_core_of = 723
+        add_core_of = 724
+        723 = { add_resistance = -25 }
+        724 = { add_resistance = -25 }
+
+        723 = { add_compliance = 20 }
+        724 = { add_compliance = 20 }
+
+        }
+    }
+    ai_will_do = {
+        factor = 1
+}
+
+ocus = {
+    id = PEK_integrate_australia
+    icon = GFX_goal_generic_improve_relations
+    x = 13
+    y = 6
+    cost = 10
+
+    prerequisite = { focus = PEK_integrate_new_zealand }
+
+
+    completion_reward = {
+
+        add_political_power = 120
+        add_stability = 0.05
+
+        add_core_of = 519
+        add_core_of = 520
+        add_core_of = 521
+        add_core_of = 522
+        add_core_of = 523
+        add_core_of = 524
+
+        519 = { add_resistance = -25 }
+        520 = { add_resistance = -25 }
+        521 = { add_resistance = -25 }
+        522 = { add_resistance = -25 }
+        523 = { add_resistance = -25 }
+        524 = { add_resistance = -25 }
+
+        519 = { add_compliance = 20 }
+        520 = { add_compliance = 20 }
+        521 = { add_compliance = 20 }
+        522 = { add_compliance = 20 }
+        523 = { add_compliance = 20 }
+        524 = { add_compliance = 20 }
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
+
+
+
+
 
 
   #    ###   ##   ##  #   #
  # #   #  #  # # # #   # #
 #####  ###   #  #  #    #
 #   #  #  #  #  #  #    #
+
+
+
+
 
 focus = {
     id = PEK_make_a_military
@@ -660,7 +780,7 @@ focus = {
 
     completion_reward = {
           add_tech_bonus = 
-            name = ARG_infantry_bonus
+            name = PEK_infantry_bonus
             bonus = 0.75
             uses = 2
             category = infantry_weapons
@@ -706,7 +826,121 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_expand_the_navy
+    icon = GFX_goal_generic_construct_naval_dockyard
+    x = 10
+    y = 6
+    cost = 10
 
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_building_construction = {
+            type = dockyard
+            level = 4
+            instant_build = yes
+        }
+        naval_dockyard_output_factor = 0.5
+    }
+}
+
+focus = {
+    id = PEK_better_materials
+    icon = GFX_goal_generic_navy
+    x = 11
+    y = 7
+    cost = 14
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        light_attack_factor = 0.3
+        ship_armor_factor = 0.9
+    }
+}
+
+focus = {
+    id = PEK_submarines_expansions
+    icon = GFX_goal_generic_navy
+    x = 13
+    y = 8
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = sub_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalsubmarine
+        }
+    }   
+}
+
+focus = {
+    id = PEK_capital_ships_buildup
+    icon = GFX_goal_generic_navy
+    x = 11
+    y = 8
+    cost = 20
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = acr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalcarrier
+        }
+         add_tech_bonus = {
+            name = bcr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalbattlecruiser
+        }
+         add_tech_bonus = {
+            name = cru_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalcruiser
+        }
+         add_tech_bonus = {
+            name = bts_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalbattleship
+        }
+        add_navy_experience = 100
+    }
+}
+
+focus = {
+    id = PEK_screens_buildup
+    icon = GFX_goal_generic_navy
+    x = 12
+    y = 8
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = des_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavaldestroyer
+        }
+         add_tech_bonus = {
+            name = lcr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavallightcruiser
+        }
+    }
+}
 
 
   #    #  ###  
@@ -715,7 +949,7 @@ focus = {
 #   #  #  #  #
 
 focus = {
-    id = ARG_start_the_air
+    id = PEK_start_the_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 15
     y = 8
@@ -736,7 +970,7 @@ focus = {
 
 
 focus = {
-    id = ARG_extend_pilot_training
+    id = PEK_extend_pilot_training
     icon = GFX_goal_generic_pilot_training
     x = 16
     y = 9
@@ -745,9 +979,9 @@ focus = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        air_attack_factor = 0,5
-        air_night_factor = 0,5
-        air_experience_factor = -0,05
+        air_attack_factor = 0.5
+        air_night_factor = 0.5
+        air_experience_factor = -0.05
     }
     
      ai_will_do = {
@@ -756,7 +990,7 @@ focus = {
 }
 
 focus = {
-    id = ARG_increase_production_of_air
+    id = PEK_increase_production_of_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 14
     y = 9
@@ -765,8 +999,8 @@ focus = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        production_factory_max_efficiency_factor = 0,5
-        production_factory_efficiency_gain_factor = 0,5
+        production_factory_max_efficiency_factor = 0.5
+        production_factory_efficiency_gain_factor = 0.5
         add_building_construction = {
             type = arms_factory
             level = 3
@@ -779,7 +1013,7 @@ focus = {
 }
 
 focus = {
-    id =  Expand_air_bases
+    id =  expand_air_bases
     icon = GFX_goal_generic_construct_air_base
     x = 15
     y = 10
@@ -793,4 +1027,98 @@ focus = {
             level 5
         }
     }
+
+    ai_will_do = 1
 }
+
+focus = {
+    id = putting_weapons_on_planes
+    icon = GFX_goal_generic_air_fighter
+    x = 15
+    y = 11
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_weapon
+        }
+        add_air_experience = 35
+    }
+}
+
+focus = {
+    id = spy_planes
+    icon = GFX_goal_generic_air
+    x = 16
+    y = 11
+    cost = 3
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_recon_aot_bonus              
+            bonus = 3.0
+            category = aircraft_special
+        }
+    }
+}
+
+focus = {
+    id = putting_bombs_on_tactical_planes
+    icon = GFX_goal_generic_air 
+    x = 16
+    y = 12
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+    add_tech_bonus = {
+            name = tactical_bomber_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = tactical_bomber
+        }
+        add_tech_bonus = {
+            name = aircraft_bomb_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_bomb
+        }
+    }
+}
+
+focus = {
+    id = bigger_bombs_on_bigger_planes
+    icon = GFX_goal_generic_air
+    x = 16
+    y = 17
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = strategic_bomber
+        }
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_bomb
+        }
+        add_air_experience = 50
+    }
+}
+
+
+#BOOM focus

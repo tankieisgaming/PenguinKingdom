@@ -790,6 +790,7 @@ focus = {
             ahead_reduction = 2
             category = mtgnavalbattleship
         }
+        add_navy_experience = 100
     }
 }
 

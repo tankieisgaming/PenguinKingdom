@@ -11,7 +11,7 @@ tag = PEK
 }
     focus = {
         id = PEK_focus_1
-        icon_GFX
+        icon = GFX_generic_political_reform
     }
 }
 

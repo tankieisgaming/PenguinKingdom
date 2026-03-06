@@ -752,7 +752,9 @@ focus = {
             name = sub_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-    }
+            category = mtgnavalsubmarine
+        }
+    }   
 }
 
 focus = {
@@ -765,6 +767,30 @@ focus = {
 
     completion_reward = {
 
+    }
+}
+
+focus = {
+    id = PEK_screens_buildup
+    x = 12
+    y = 8
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = des_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavaldestroyer
+        }
+         add_tech_bonus = {
+            name = lcr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavallightcruiser
+        }
     }
 }
 

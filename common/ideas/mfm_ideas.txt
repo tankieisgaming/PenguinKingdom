@@ -13,25 +13,21 @@ ideas = {
 
    
         thumbless_hands = {
-            picture = factory_output
+            picture = usa_great_depression
 
             allowed = {
                 original_tag = PEK
             }
 
             modifier = {
-<<<<<<< HEAD
-                industrial_capacity = -0.5 
-=======
-                factory_output = -0.5 
->>>>>>> 67cfbcbb779bd63705777951fd7e619502c80824
+                industrial_capacity_factory = -0.5 
             }
         }
     
 
    
         scattered_pinguins = {
-           icon = generic_manpower
+           icon = usa_great_depression
 
 
             allowed = {
@@ -39,24 +35,21 @@ ideas = {
             }
 
            modifier = {
-            reccruitable_population_factor = -0.6
+            conspcription_factor = -0.6
            }
         }
 
     
         wasted_infrastructure = {
-        icon = generic_infrastructure
+        icon = usa_great_depression
 
          allowed = {
                 original_tag = PEK
             }
         
         modifier = {
-            infrastructure_building_speed = -0.9
-<<<<<<< HEAD
-        }
-=======
->>>>>>> 67cfbcbb779bd63705777951fd7e619502c80824
+            state_production_speed_buildings_factor = -0.9
+         }
         }
 
     
@@ -67,22 +60,21 @@ ideas = {
             original_tag = PEK
         }
         modifier = {
-            factory_output = -0.5
+            industrial_capacity_factory = -0.5
             
-        }
+         }
         }
 
         PEK_reunified_pinguins = {
-        icon = generic_manpower
+        icon = usa_great_depression
 
          allowed = {
                 original_tag = PEK
             }
         
         modifier = {
-            recruitable_population_factor = -.25
-            recruitable_population = -0.05
-        }
+           conspcription_factor = -0.25
+         }
         }
     
 
@@ -95,7 +87,7 @@ ideas = {
 
         modifier = {
             factory_output = 0.15
-        }
+         }
         }
 
         PEK_factory_output = {

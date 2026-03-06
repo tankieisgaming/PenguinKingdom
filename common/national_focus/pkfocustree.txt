@@ -1074,10 +1074,25 @@ focus = {
 
     available = {original_tag = PEK}
 
+    completion_reward = {
     add_tech_bonus = {
-            name = aircraft_weapon_aot_bonus              
+            name = tactical_bomber_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = aircraft_weapon
+            category = tactical_bomber
         }
+        add_tech_bonus = {
+            name = aircraft_bomb_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_bomb
+        }
+    }
+}
+
+focus = {
+    id = bigger_bombs_on_bigger_planes
+    icon = GFX_goal_generic_air
+    x = 16
+    y = 13
 }

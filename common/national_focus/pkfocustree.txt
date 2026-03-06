@@ -538,6 +538,48 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_unify_africa
+    icon = GFX_goal_generic_political_pressure
+    x = 10
+    y = 5
+    cost = 8
+
+    prerequisite = { focus = PEK_claim_namibia_southafrica }
+
+    available = {
+        OR = {
+            tag = SAF
+            tag = NAM
+        }
+    }
+
+    completion_reward = {
+
+        add_political_power = 50
+        add_stability = 0.05
+
+        add_core_of = 541
+        add_core_of = 544
+        add_core_of = 545
+        add_core_of = 546
+
+        add_claim_by = ROOT
+        541 = { add_resistance = -20 }
+        544 = { add_resistance = -20 }
+        545 = { add_resistance = -20 }
+        546 = { add_resistance = -20 }
+
+        if = {
+            limit = { tag = PEK }
+            set_cosmetic_tag = PEK_UNIFIED
+        }
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}
 
 
   #    ####  #  ####
@@ -613,7 +655,30 @@ focus = {
     }
 }
 
+focus = {
+    id = PEK_integrate_new_zealand
+    icon = GFX_goal_generic_major_alliance
+    x = 12
+    y = 6
+    cost = 10
 
+    prerequisite = { focus = PEK_claim_australia }
+
+    completion_reward = {
+
+        add_core_of = 723
+        add_core_of = 724
+        723 = { add_resistance = -20 }
+        724 = { add_resistance = -20 }
+
+        723 = { add_compliance = 20 }
+        724 = { add_compliance = 20 }
+
+        }
+    }
+    ai_will_do = {
+        factor = 1
+}
 
   #    ###   ##   ##  #   #
  # #   #  #  # # # #   # #

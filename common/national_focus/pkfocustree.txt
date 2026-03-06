@@ -792,6 +792,7 @@ focus = {
 
 focus = {
     id = PEK_better_materials
+    icon = GFX_goal_generic_navy
     x = 11
     y = 7
     cost = 14
@@ -806,6 +807,7 @@ focus = {
 
 focus = {
     id = PEK_submarines_expansions
+    icon = GFX_goal_generic_navy
     x = 13
     y = 8
     cost = 5
@@ -824,6 +826,7 @@ focus = {
 
 focus = {
     id = PEK_capital_ships_buildup
+    icon = GFX_goal_generic_navy
     x = 11
     y = 8
     cost = 20
@@ -861,6 +864,7 @@ focus = {
 
 focus = {
     id = PEK_screens_buildup
+    icon = GFX_goal_generic_navy
     x = 12
     y = 8
     cost = 5
@@ -954,7 +958,7 @@ focus = {
 }
 
 focus = {
-    id =  Expand_air_bases
+    id =  expand_air_bases
     icon = GFX_goal_generic_construct_air_base
     x = 15
     y = 10
@@ -971,3 +975,42 @@ focus = {
 
     ai_will_do = 1
 }
+
+focus = {
+    id = putting_weapons_on_planes
+    icon = GFX_goal_generic_air_fighter
+    x = 15
+    y = 11
+    cost = 5
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_weapon_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = aircraft_weapon
+        }
+        add_air_experience = 35
+    }
+}
+
+focus = {
+    id = spy_planes
+    icon = GFX_goal_generic_air_fighter
+    x = 16
+    y = 11
+    cost = 3
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = aircraft_recon_aot_bonus              
+            bonus = 3.0
+            category = aircraft_special
+        }
+    }
+}
+

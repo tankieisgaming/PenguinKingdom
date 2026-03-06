@@ -761,12 +761,35 @@ focus = {
     id = PEK_capital_ships_buildup
     x = 11
     y = 8
-    cost = 5
+    cost = 20
 
     available = {original_tag = PEK}
 
     completion_reward = {
-
+        add_tech_bonus = {
+            name = acr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalcarrier
+        }
+         add_tech_bonus = {
+            name = bcr_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalbattlecruiser
+        }
+         add_tech_bonus = {
+            name = cru_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalcruiser
+        }
+         add_tech_bonus = {
+            name = bts_aot_bonus              
+            uses = 2                  
+            ahead_reduction = 2
+            category = mtgnavalbattleship
+        }
     }
 }
 

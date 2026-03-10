@@ -1015,7 +1015,7 @@ focus = {
 }
 
 focus = {
-    id =  expand_air_bases
+    id =  PEK_expand_air_bases
     icon = GFX_goal_generic_construct_air_base
     x = 15
     y = 10
@@ -1034,7 +1034,7 @@ focus = {
 }
 
 focus = {
-    id = putting_weapons_on_planes
+    id = PEK_putting_weapons_on_planes
     icon = GFX_goal_generic_air_fighter
     x = 15
     y = 11
@@ -1054,7 +1054,7 @@ focus = {
 }
 
 focus = {
-    id = spy_planes
+    id = PEK_spy_planes
     icon = GFX_goal_generic_air
     x = 16
     y = 11
@@ -1072,7 +1072,7 @@ focus = {
 }
 
 focus = {
-    id = putting_bombs_on_tactical_planes
+    id = PEK_putting_bombs_on_tactical_planes
     icon = GFX_goal_generic_air 
     x = 16
     y = 12

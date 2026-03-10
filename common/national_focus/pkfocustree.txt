@@ -1097,7 +1097,7 @@ focus = {
 }
 
 focus = {
-    id = bigger_bombs_on_bigger_planes
+    id = PEK_bigger_bombs_on_bigger_planes
     icon = GFX_goal_generic_air
     x = 16
     y = 17
@@ -1124,3 +1124,25 @@ focus = {
 
 
 #BOOM focus
+
+focus = {
+    id = PEK_nuclear_research_push
+    icon = GFX_goal_generic_construct_nuclear_reactor
+    x = 13
+    y = 6
+    cost = 10
+
+    prerequisite = { focus = PEK_bigger_bombs_on_bigger_planes }
+    available = { original_tag = PEK }
+
+    completion_reward = {
+        add_project_progress = {
+            project = nuclear_reactor
+            progress = 0.5
+        }
+    }
+
+    ai_will_do = {
+        factor = 1
+    }
+}

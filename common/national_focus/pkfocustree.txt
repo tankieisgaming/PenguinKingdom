@@ -850,7 +850,7 @@ focus = {
 }
 
 focus = {
-    id = PEK_increase_gun_training
+    id = PEK_intesify_gun_training
     icon = GFX_goal_generic_navy
     x = 12
     y = 16

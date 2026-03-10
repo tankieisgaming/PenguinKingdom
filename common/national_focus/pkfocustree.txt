@@ -1126,7 +1126,7 @@ focus = {
 #BOOM focus
 
 focus = {
-    id = PEK_nuclear_research_push
+    id = PEK_nuclear_research
     icon = GFX_goal_generic_construct_nuclear_reactor
     x = 13
     y = 6

@@ -1187,4 +1187,8 @@ focus_tree = {
     ai_will_do = {
         factor = 1
     }
+<<<<<<< HEAD
  }
+=======
+ }
+>>>>>>> a20dda86d8448fccc191834e94a80b2e5618d406

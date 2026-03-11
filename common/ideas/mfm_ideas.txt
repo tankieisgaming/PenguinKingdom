@@ -97,7 +97,7 @@ ideas = {
            }
 
            modifier = {
-        factory_output = 0.25
+         industrial_capacity_factory = 0.25
          }
        }  
     }

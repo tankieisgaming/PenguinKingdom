@@ -675,12 +675,13 @@ focus = {
         724 = { add_compliance = 20 }
 
         }
-    }
+    
     ai_will_do = {
         factor = 1
+    }
 }
 
-ocus = {
+focus = {
     id = PEK_integrate_australia
     icon = GFX_goal_generic_improve_relations
     x = 13

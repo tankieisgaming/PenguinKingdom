@@ -1,33 +1,33 @@
 focus_tree = {
-id = penguin_kingdom_focus
+ id = penguin_kingdom_focus
 
-country = {
-factor = 0
+ country = {
+ factor = 0
 
-modifier = {
-add = 10
-tag = PEK
-}
-}
+ modifier = {
+ add = 10
+ tag = PEK
+ }
+ }
     focus = {
         id = PEK_focus_1
         icon = GFX_generic_political_reform
     }
-}
+
+
+ default = no
+
+
+  ##   ##   #   #
+ #    #  #  #  #
+ #  # #  #  # #
+  ##   ##    #
 
 
 
 
- ##   ##   #   #
-#    #  #  #  #
-#  # #  #  # #
- ##   ##    #
 
-
-
-
-
-focus = {
+ focus = {
     id = PEK_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
     cost = 5
@@ -42,7 +42,7 @@ focus = {
     completion_reward = {
         add_political_power = 115
     }
-}
+ }
 
 
 
@@ -58,7 +58,7 @@ focus = {
 
 
 
-focus = {
+ focus = {
     id = PEK_rebuilding_the_nation
     icon = GFX_goal_generic_construct_civ_factory
     cost = 7
@@ -77,9 +77,9 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_expand_existing_factories
     icon = GFX_goal_generic_construct_civ_factory
     cost = 5
@@ -99,11 +99,11 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
-#### RICH PEOPLE ####
+ #### RICH PEOPLE ####
 
-focus = {
+ focus = {
     id = PEK_we_need_some_roads
     icon = GFX_goal_generic_construct_infrastructure
     cost = 7
@@ -125,9 +125,9 @@ focus = {
             }
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_capital_industrial_push
     icon = GFX_goal_generic_industry
     cost = 5
@@ -151,12 +151,12 @@ focus = {
             }
         }
     }
-}
+ }
 
-#### COUNTRYSIDE ####
+ #### COUNTRYSIDE ####
 
 
-focus = {
+ focus = {
     id = PEK_build_up_the_countryside
     icon = GFX_goal_generic_construct_infrastructure
     cost = 7
@@ -188,9 +188,9 @@ focus = {
             }
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_industrial_boost
     icon = GFX_goal_generic_industry
     cost = 6
@@ -212,21 +212,21 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
 
 
 
-#######   #    #  
-#  #  #        #  
-#  #  #   #    #   
-#  #  #   #    # ##    
+ #######   #    #  
+ #  #  #        #  
+ #  #  #   #    #   
+ #  #  #   #    # ##    
 
 
 
 
 
-focus = {
+ focus = {
     id = PEK_starting_military_construction
     icon = GFX_goal_generic_construct_mil_factory
     cost = 4
@@ -245,10 +245,10 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
 
-focus = {
+ focus = {
     id = PEK_continuing_building_up_the_military
     icon = GFX_goal_generic_construct_mil_factory
     cost = 7
@@ -267,28 +267,28 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
 
 
 
-#     #     #   #    ###
- #   # #   #   # #   #  #
-  # #   # #   #####  ###
-   #     #    #   #  #  #
+ #     #     #   #    ###
+  #   # #   #   # #   #  #
+   # #   # #   #####  ###
+    #     #    #   #  #  #
 
 
 
 
-####          #
-  #          # #
- #    ###   #####
-####        #   #
+ ####          #
+   #          # #
+  #    ###   #####
+ ####        #   #
 
 
 
 
-focus = {
+ focus = {
     id = PEK_claim_chile
     icon = GFX_goal_generic_territory_or_war
     x = 10
@@ -313,9 +313,9 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_integrate_chile
     icon = GFX_goal_generic_propaganda
     x = 12
@@ -348,11 +348,11 @@ focus = {
     ai_will_do = {
         factor = 1.5
     }
-}
+ }
 
 
 
-focus = {
+ focus = {
     id = PEK_claim_argentina
     icon = GFX_goal_generic_major_war
     x = 10
@@ -381,10 +381,10 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
 
-focus = {
+ focus = {
     id = PEK_invade_peru
     icon = GFX_goal_generic_major_war
     x = 13
@@ -414,10 +414,10 @@ focus = {
     ai_will_do = {
         factor = 1.2
     }
-}
+ }
 
 
-focus = {
+ focus = {
     id = PEK_integrate_peru_coast
     icon = GFX_goal_generic_propaganda
     x = 14
@@ -485,22 +485,22 @@ focus = {
     ai_will_do = {
         factor = 1.3
     }
-}
+ }
 
 
 
 
 
-  #    ####  ###   #   ###    #
- # #   #     #  #  #  #      # #
-#####  ###   ###   #  #     #####
-#   #  #     #  #  #   ###  #   #
+   #    ####  ###   #   ###    #
+  # #   #     #  #  #  #      # #
+ #####  ###   ###   #  #     #####
+ #   #  #     #  #  #   ###  #   #
 
 
 
 
 
-focus = {
+ focus = {
     id = PEK_claim_namibia_southafrica
     icon = GFX_goal_generic_major_war
     x = 10
@@ -536,9 +536,9 @@ focus = {
     ai_will_do = {
         factor = 1.5
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_unify_africa
     icon = GFX_goal_generic_political_pressure
     x = 10
@@ -579,18 +579,18 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
 
-  #    ####  #  ####
- # #     #   #  ##
-#####   #    #  #
-#   #  ####  #  ####
+   #    ####  #  ####
+  # #     #   #  ##
+ #####   #    #  #
+ #   #  ####  #  ####
 
 
 
 
-focus = {
+ focus = {
     id = PEK_claim_australia
     icon = GFX_goal_generic_major_war
     x = 10
@@ -620,10 +620,10 @@ focus = {
     ai_will_do = {
         factor = 1.5
     }
-}
+ }
 
 
-focus = {
+ focus = {
     id = PEK_claim_new_zealand
     icon = GFX_goal_generic_major_war
     x = 11
@@ -653,9 +653,9 @@ focus = {
     ai_will_do = {
         factor = 1.5
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_integrate_new_zealand
     icon = GFX_goal_generic_major_alliance
     x = 12
@@ -679,9 +679,9 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_integrate_australia
     icon = GFX_goal_generic_improve_relations
     x = 13
@@ -721,23 +721,23 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }  
 
 
 
 
 
 
-  #    ###   ##   ##  #   #
- # #   #  #  # # # #   # #
-#####  ###   #  #  #    #
-#   #  #  #  #  #  #    #
+   #    ###   ##   ##  #   #
+  # #   #  #  # # # #   # #
+ #####  ###   #  #  #    #
+ #   #  #  #  #  #  #    #
 
 
 
 
 
-focus = {
+ focus = {
     id = PEK_make_a_military
     icon = GFX_goal_generic_political_reform
     x = 11
@@ -760,12 +760,12 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
 
 
 
-focus = {
+ focus = {
     id = PEK_build_the_army
     icon = GFX_goal_generic_small_arms
     x = 10
@@ -788,20 +788,20 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
 
 
 
 
-#  #    #    #   #  #   #
-## #   # #   #   #   # #
-# ##  #####   # #     #
-#  #  #   #    #      #
+ #  #    #    #   #  #   #
+ ## #   # #   #   #   # #
+ # ##  #####   # #     #
+ #  #  #   #    #      #
 
 
 
-focus = {
+ focus = {
     id = PEK_start_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
     x = 10
@@ -824,9 +824,9 @@ focus = {
     ai_will_do = {
         factor = 1
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_expand_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
     x = 10
@@ -844,9 +844,9 @@ focus = {
         naval_dockyard_output_factor = 0.5
         add_extra_state_shared_building_slots = 5
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_intesify_gun_training
     icon = GFX_goal_generic_navy
     x = 12
@@ -864,9 +864,9 @@ focus = {
         navy_positioning = 0.1
         navy_produciton_cost_factor = 0.2
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_better_materials
     icon = GFX_goal_generic_navy
     x = 11
@@ -879,9 +879,9 @@ focus = {
         light_attack_factor = 0.3
         ship_armor_factor = 0.9
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_submarines_expansions
     icon = GFX_goal_generic_navy
     x = 13
@@ -898,9 +898,9 @@ focus = {
             category = mtgnavalsubmarine
         }
     }   
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_capital_ships_buildup
     icon = GFX_goal_generic_navy
     x = 11
@@ -936,9 +936,9 @@ focus = {
         }
         add_navy_experience = 100
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_screens_buildup
     icon = GFX_goal_generic_navy
     x = 12
@@ -961,15 +961,15 @@ focus = {
             category = mtgnavallightcruiser
         }
     }
-}
+ }
 
 
-  #    #  ###  
- # #   #  #  #  
-#####  #  ###   
-#   #  #  #  #
+   #    #  ###  
+  # #   #  #  #  
+ #####  #  ###   
+ #   #  #  #  #
 
-focus = {
+ focus = {
     id = PEK_start_the_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 15
@@ -987,10 +987,10 @@ focus = {
      ai_will_do = {
             factor = 10
         }
-}
+ }
 
 
-focus = {
+ focus = {
     id = PEK_extend_pilot_training
     icon = GFX_goal_generic_pilot_training
     x = 16
@@ -1008,9 +1008,9 @@ focus = {
      ai_will_do = {
             factor = 1
         }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_increase_production_of_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 14
@@ -1031,9 +1031,9 @@ focus = {
      ai_will_do = {
             factor = 1
         }
-}
+ }
 
-focus = {
+ focus = {
     id =  PEK_expand_air_bases
     icon = GFX_goal_generic_construct_air_base
     x = 15
@@ -1050,9 +1050,9 @@ focus = {
     }
 
     ai_will_do = 1
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_putting_weapons_on_planes
     icon = GFX_goal_generic_air_fighter
     x = 15
@@ -1070,9 +1070,9 @@ focus = {
         }
         add_air_experience = 35
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_spy_planes
     icon = GFX_goal_generic_air
     x = 16
@@ -1088,9 +1088,9 @@ focus = {
             category = aircraft_special
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_putting_bombs_on_tactical_planes
     icon = GFX_goal_generic_air 
     x = 16
@@ -1113,9 +1113,9 @@ focus = {
             category = aircraft_bomb
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_bigger_bombs_on_bigger_planes
     icon = GFX_goal_generic_air
     x = 16
@@ -1139,12 +1139,12 @@ focus = {
         }
         add_air_experience = 50
     }
-}
+ }
 
 
-#BOOM focus
+ #BOOM focus
 
-focus = {
+ focus = {
     id = PEK_nuclear_research
     icon = GFX_goal_generic_construct_nuclear_reactor
     x = 13
@@ -1164,4 +1164,5 @@ focus = {
     ai_will_do = {
         factor = 1
     }
+ }
 }

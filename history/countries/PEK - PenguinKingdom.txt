@@ -40,7 +40,7 @@ set_convoys = 20
 
 
 	complete_special_project = {
-		
+		sp_air_radar
 	}
 }
 

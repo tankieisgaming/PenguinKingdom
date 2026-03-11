@@ -93,7 +93,9 @@ focus_tree = {
 
     completion_reward = {
         add_building_construction = {
+            507 = {
             add_extra_state_shared_building_slots = 2
+            }
             type = industrial_complex
             level = 2
             instant_build = yes

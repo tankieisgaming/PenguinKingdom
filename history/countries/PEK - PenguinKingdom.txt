@@ -33,6 +33,10 @@ complete_special_project = {
 		project = sp:sp_air_radar
 	}
 
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
+
 1939.1.1 = {
 	
 	#generic focuses

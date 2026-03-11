@@ -193,7 +193,7 @@ focus_tree = {
             }
          }
     }
- }
+ 
 
  focus = {
     id = PEK_industrial_boost

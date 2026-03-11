@@ -27,7 +27,7 @@ ideas = {
 
    
         scattered_pinguins = {
-           icon = usa_great_depression
+          picture = usa_great_depression
 
 
             allowed = {
@@ -35,13 +35,13 @@ ideas = {
             }
 
            modifier = {
-            conspcription_factor = -0.6
+            conscription_factor = -0.6
            }
         }
 
     
         wasted_infrastructure = {
-        icon = usa_great_depression
+        picture = usa_great_depression
 
          allowed = {
                 original_tag = PEK
@@ -54,7 +54,7 @@ ideas = {
 
     
         what_are_factories = {
-        icon = GFX_goal_generic_industry
+        picture = GFX_goal_generic_industry
 
         allowed = {
             original_tag = PEK
@@ -66,32 +66,32 @@ ideas = {
         }
 
         PEK_reunified_pinguins = {
-        icon = usa_great_depression
+       picture = usa_great_depression
 
          allowed = {
                 original_tag = PEK
             }
         
         modifier = {
-           conspcription_factor = -0.25
+           conscription_factor = -0.25
          }
         }
     
 
 
         PEK_factory_output_boost = {
-        icon = GFX_idea_generic_industry
+        picture = GFX_idea_generic_industry
         allowed = {
            original_tag = PEK
         }
 
         modifier = {
-            factory_output = 0.15
+            industrial_capacity_factory = 0.15
          }
         }
 
         PEK_factory_output = {
-          icon = GFX_idea_generic_industry
+          picture = GFX_idea_generic_industry
           allowed = {
               original_tag = PEK
            }

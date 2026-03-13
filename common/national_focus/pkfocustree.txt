@@ -203,7 +203,7 @@ focus_tree = {
     id = PEK_industrial_boost
     icon = GFX_goal_generic_industry
     cost = 6
-    prerequisite = PEK_build_up_the_countryside
+    prerequisite = {PEK_build_up_the_countryside}
 
     x = 2
     y = 4

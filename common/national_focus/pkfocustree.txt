@@ -257,6 +257,43 @@ focus_tree = {
     }
  }
 
+ focus = {
+    id = PEK_driving_steel_things
+    icon = GFX_goal_generic_army_tanks
+    cost = 10
+    x = 2
+    y = 2
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_ideas = PEK_driving_steel_things
+        add_tech_bonus = {
+            name = tank_research_bonus
+            bonus = 3
+            uses = 1
+            category = armor
+        }
+    }
+ }
+
+ focus = {
+    id = PEK_place_more_fuel_consuming_parts_in_our_tanks
+    icon = GFX_goal_generic_army_tanks
+    cost = 10
+
+    available = {original_tag = PEK}
+
+    completion_reward {
+        add_tech_bonus = {
+            name = faster_tank_research_bonus
+            bonus = 1.5
+            uses = 2
+            category = light_armor
+        }
+        add_army_experience = 50
+    }
+ }
 
  focus = {
     id = PEK_continuing_building_up_the_military
@@ -828,6 +865,7 @@ focus = {
     cost = 5
 
     available = { original_tag = PEK }
+    prerequisite = { focus = PEK_need_more_troops }
     
     completion_reward = {
         add_building_construction = {

@@ -430,23 +430,6 @@ focus_tree = {
     }
  }
 
-focus = {
-    id = PEK_integrate_argentina
-    icon = GFX_goal_generic_political_pressure
-    x = 6
-    y = 7
-    cost = 10
-
-    prerequisite = { focus = PEK_claim_argentina }
-
-    completion_reward = {
-        annex_country = {
-            target = ARG
-            transfer_troops = yes
-        }
-    }
-}
-
 
  focus = {
     id = PEK_integrate_peru_coast

@@ -2,7 +2,7 @@ ideas = {
 
     country = {
         Penguins_support = {
-            picture = generic_pp_unity_bonus
+            icon = generic_pp_unity_bonus
 
             modifier = {
                 political_power_gain = 0.25
@@ -13,7 +13,7 @@ ideas = {
 
    
         thumbless_hands = {
-            picture = usa_great_depression
+            icon = usa_great_depression
 
             allowed = {
                 original_tag = PEK
@@ -27,7 +27,7 @@ ideas = {
 
    
         scattered_pinguins = {
-          picture = usa_great_depression
+          icon = usa_great_depression
 
 
             allowed = {
@@ -41,7 +41,7 @@ ideas = {
 
     
         wasted_infrastructure = {
-        picture = usa_great_depression
+        icon = usa_great_depression
 
          allowed = {
                 original_tag = PEK
@@ -54,7 +54,7 @@ ideas = {
 
     
         what_are_factories = {
-        picture = GFX_goal_generic_industry
+        icon = GFX_goal_generic_industry
 
         allowed = {
             original_tag = PEK
@@ -80,13 +80,13 @@ ideas = {
 
 
         PEK_factory_output_boost = {
-        picture = GFX_idea_generic_industry
+        icon = GFX_idea_generic_industry
         allowed = {
            original_tag = PEK
         }
 
         modifier = {
-            industrial_capacity_factory = 0.15
+            industrial_capacity_factory_factor = 0.15
          }
         }
 
@@ -101,7 +101,7 @@ ideas = {
          }
        }  
 
-       PEK_driving_steel_things
+       PEK_driving_steel_things = {
        icon = GFX_goal_generic_army_tanks
        allowed = { original_tag = PEK}
 
@@ -109,4 +109,5 @@ ideas = {
         production_cost_armor_factor = -0.1
        }
     }
+ }
 }

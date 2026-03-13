@@ -108,6 +108,6 @@ ideas = {
        modifier = {
         production_cost_armor_factor = -0.1
        }
+     }
     }
- }
 }

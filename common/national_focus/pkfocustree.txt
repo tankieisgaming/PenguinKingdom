@@ -156,7 +156,7 @@ focus_tree = {
     }
 
     completion_reward = {
-        add_ideas = PEK_factory_output_25
+        add_ideas = PEK_factory_output_boost
 
        
             add_building_construction = {

@@ -12,6 +12,12 @@ focus_tree = {
     focus = {
         id = PEK_focus_1
         icon = GFX_generic_political_reform
+        x = 0
+        y = 0
+        cost = 5
+
+        completion_reward
+        add_political_power = 200
     }
 
 

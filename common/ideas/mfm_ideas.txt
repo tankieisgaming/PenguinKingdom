@@ -1,6 +1,6 @@
 ideas = {
 
-    country = {
+   
         Penguins_support = {
             icon = generic_pp_unity_bonus
 
@@ -8,15 +8,12 @@ ideas = {
                 political_power_gain = 0.25
             }
         }
-    }
+    
 
-    country = {
+  
         thumbless_hands = {
-<<<<<<< HEAD
             picture = factory_output
-=======
             icon = usa_great_depression
->>>>>>> 3a5e254b4986f465f72c303aa735927aff93e784
 
             allowed = {
                 original_tag = PEK
@@ -26,17 +23,17 @@ ideas = {
                 factory_output = -0.5 
             }
         }
-    }
+    
 
-<<<<<<< HEAD
-    country = {
+
+    
         scattered_pinguins
            icon = generic_manpower
-=======
+
    
         scattered_pinguins = {
           icon = usa_great_depression
->>>>>>> 3a5e254b4986f465f72c303aa735927aff93e784
+
 
 
             allowed = {
@@ -48,15 +45,15 @@ ideas = {
            }
     }
 
-<<<<<<< HEAD
-    country = {
+
+    
         wasted_infrastructure
         icon = generic_infrastructure
-=======
+
     
         wasted_infrastructure = {
         icon = usa_great_depression
->>>>>>> 3a5e254b4986f465f72c303aa735927aff93e784
+
 
          allowed = {
                 original_tag = PEK
@@ -67,13 +64,9 @@ ideas = {
         }
     }
 
-<<<<<<< HEAD
-    country = {
-        what_are_factories
-=======
+
     
         what_are_factories = {
->>>>>>> 3a5e254b4986f465f72c303aa735927aff93e784
         icon = GFX_goal_generic_industry
 
         allowed = {
@@ -83,7 +76,7 @@ ideas = {
             factory_output = -0.5
             
         }
-    }
+        }
 
     PEK_reunified_pinguins = {
         icon = generic_manpower
@@ -97,21 +90,20 @@ ideas = {
             recruitable_population = 0.05
         }
     }
-}
 
-PEK_factory_output_boost = {
+
+ PEK_factory_output_boost = {
     icon = GFX_idea_generic_industry
     allowed = {
         original_tag = PEK
     }
 
-<<<<<<< HEAD
     modifier = {
         factory_output = 0.15
     }
-}
+ }
 
-PEK_factory_output_25 = {
+ PEK_factory_output_25 = {
     icon = GFX_idea_generic_industry
     allowed = {
         original_tag = PEK
@@ -119,13 +111,13 @@ PEK_factory_output_25 = {
 
     modifier = {
         factory_output = 0.25
-=======
         PEK_factory_output_boost = {
         icon = GFX_idea_generic_industry
         allowed = {
            original_tag = PEK
         }
-
+        }
+    }
         modifier = {
             industrial_capacity_factory_factor = 0.15
          }
@@ -150,6 +142,4 @@ PEK_factory_output_25 = {
         production_cost_armor_factor = -0.1
        }
      }
->>>>>>> 3a5e254b4986f465f72c303aa735927aff93e784
-    }
-}
+

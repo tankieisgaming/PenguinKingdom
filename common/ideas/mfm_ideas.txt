@@ -20,7 +20,7 @@ ideas = {
             }
 
             modifier = {
-                factory_output = -0.5 
+                industrial_capacity_factory = -0.5 
             }
         }
     
@@ -41,7 +41,7 @@ ideas = {
             }
 
            modifier = {
-            reccruitable_population_factor = -0.6
+            recruitable_population_factor = -0.6
            }
     }
 
@@ -60,7 +60,7 @@ ideas = {
             }
         
         modifier = {
-            infrastructure_building_speed = -0.9
+            infrastructure_construction_speed = -0.9
         }
     }
 
@@ -73,7 +73,7 @@ ideas = {
             original_tag = PEK
         }
         modifier = {
-            factory_output = -0.5
+            industrial_capacity_factory  = -0.5
             
         }
         }
@@ -99,7 +99,7 @@ ideas = {
     }
 
     modifier = {
-        factory_output = 0.15
+       industrial_capacity_factory   = 0.15
     }
  }
 
@@ -110,29 +110,10 @@ ideas = {
     }
 
     modifier = {
-        factory_output = 0.25
-        PEK_factory_output_boost = {
-        icon = GFX_idea_generic_industry
-        allowed = {
-           original_tag = PEK
-        }
-        }
-    }
-        modifier = {
-            industrial_capacity_factory_factor = 0.15
-         }
-        }
-
-        PEK_factory_output = {
-          picture = GFX_idea_generic_industry
-          allowed = {
-              original_tag = PEK
-           }
-
-           modifier = {
-         industrial_capacity_factory = 0.25
-         }
-       }  
+      industrial_capacity_factory = 0.25
+    } 
+ }
+      
 
        PEK_driving_steel_things = {
        icon = GFX_goal_generic_army_tanks
@@ -142,4 +123,4 @@ ideas = {
         production_cost_armor_factor = -0.1
        }
      }
-
+}

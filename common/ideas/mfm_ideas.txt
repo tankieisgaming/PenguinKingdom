@@ -1,5 +1,5 @@
 ideas = {
-
+    country = {
    
         Penguins_support = {
             icon = generic_pp_unity_bonus
@@ -123,4 +123,5 @@ ideas = {
         production_cost_armor_factor = -0.1
        }
      }
+    }
 }

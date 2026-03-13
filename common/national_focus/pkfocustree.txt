@@ -77,12 +77,14 @@ focus_tree = {
     }
 
     completion_reward = {
-        add_extra_state_shared_building_slots = 3
+      954 = {
         add_building_construction = {
             type = industrial_complex 
             level = 3
             instant_build = yes
         }
+        add_extra_state_shared_building_slots = 4
+      }
     }
  }
 
@@ -99,11 +101,13 @@ focus_tree = {
     }
 
     completion_reward = {
+        507 = {
         add_building_construction = {
-            add_extra_state_shared_building_slots = 2
             type = industrial_complex
             level = 2
             instant_build = yes
+        }
+         add_extra_state_shared_building_slots = 2
         }
     }
  }
@@ -212,12 +216,13 @@ focus_tree = {
 
     completion_reward = {
         add_ideas = PEK_factory_output_boost
-
+      949 = {
         add_building_construction = {
             type = industrial_complex
             level = 1
             instant_build = yes
         }
+      }
     }
  }  
 
@@ -245,11 +250,13 @@ focus_tree = {
     }
 
     completion_reward = {
-        add_extra_state_shared_building_slots = 2
+        949 = {
         add_building_construction = {
             type = arms_factory
             level = 2
             instant_build = yes
+        }
+           add_extra_state_shared_building_slots = 2
         }
     }
  }
@@ -267,12 +274,14 @@ focus_tree = {
     }
 
     completion_reward = {
-        add_extra_state_shared_building_slots = 3
+       954 = {
         add_building_construction = {
             type = arms_factory 
             level = 3
             instant_build = yes
         }
+         add_extra_state_shared_building_slots = 4
+       }
     }
  }
 
@@ -636,16 +645,20 @@ focus_tree = {
 
     available = { original_tag = PEK }
     completion_reward = {
+        949 = {
            add_building_construction = {
             type = supply_node
             level = 1
             instant_build = yes
+            }
         }
+         953 = {
            add_building_construction = {
             type = naval_base
             level = 2
             instant_build = yes
-        }
+          }
+         }
     }
     ai_will_do = {
         factor = 1
@@ -700,11 +713,13 @@ focus_tree = {
     prerequisite = { focus = PEK_make_a_military }
 
     completion_reward = {
+       953 = { 
         add_building_construction = {
             type = dockyard
             level = 2
             instant_build = yes
         }
+       }
         add_navy_experience = 50
     }
 
@@ -730,9 +745,10 @@ focus_tree = {
             level = 4
             instant_build = yes
          }
-         naval_dockyard_output_factor = 0.5
+        
          add_extra_state_shared_building_slots = 5
         }
+      naval_dockyard_output_factor = 0.5
      }
  }
 
@@ -872,10 +888,13 @@ focus_tree = {
     available = { original_tag = PEK}
 
     completion_reward = {
+       953 = {
         add_building_construction = {
             type = arms_factory
             level = 3
         }
+        add_extra_state_shared_building_slots = 4
+       }
     }
      ai_will_do = {
             factor = 10
@@ -915,10 +934,12 @@ focus_tree = {
     completion_reward = {
         production_factory_max_efficiency_factor = 0.5
         production_factory_efficiency_gain_factor = 0.5
+       507 = {
         add_building_construction = {
             type = arms_factory
             level = 3
         }
+       }
     }
     
      ai_will_do = {
@@ -936,10 +957,12 @@ focus_tree = {
     available = {original_tag = PEK}
 
     completion_reward = {
+       949 = {
         add_building_construction = {
             type = air_base
             level = 5
         }
+       }
     }
 
     ai_will_do = {

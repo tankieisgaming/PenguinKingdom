@@ -1,0 +1,23 @@
+characters = {
+
+ PEK_skipper = {
+  name = "General Skipper"
+  portraits = {
+   army = { texturefile = "gfx/leaders/PEK/PEK_skipper.dds" }
+  }
+
+  corps_commander = {
+   attack_skill = 6
+   defense_skill = 2
+   planning_skill = 3
+   logistics_skill = 1
+  }
+
+  traits = {
+   trickster
+   commando
+   winter_specialist
+  }
+ }
+
+}

@@ -5,7 +5,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = PEK_skipper
 recruit_character = ALG_ar
 recruit_character = ALG_acr
 recruit_character = ALG_mt
@@ -29,10 +28,6 @@ recruit_character = ALG_aco2
 
 
 set_convoys = 20
-
-complete_special_project = {
-		project = sp:sp_air_radar
-	}
 
 1939.1.1 = {
 	
@@ -71,6 +66,10 @@ complete_special_project = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 	}
+
+set_grand_doctrine = grand_battleplan
+set_grand_doctrine = new_fleet_in_being
+set_grand_doctrine = new_strategic_destruction
 
 	complete_special_project = {
 		project = sp:sp_air_radar

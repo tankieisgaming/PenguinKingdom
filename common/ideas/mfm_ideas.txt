@@ -8,26 +8,25 @@ ideas = {
                 political_power_gain = 0.25
             }
         }
+    }
 
-    
-
-   
+    country = {
         thumbless_hands = {
-            picture = usa_great_depression
+            picture = factory_output
 
             allowed = {
                 original_tag = PEK
             }
 
             modifier = {
-                industrial_capacity_factory = -0.5 
+                factory_output = -0.5 
             }
         }
-    
+    }
 
-   
-        scattered_pinguins = {
-          picture = usa_great_depression
+    country = {
+        scattered_pinguins
+           icon = generic_manpower
 
 
             allowed = {
@@ -35,78 +34,68 @@ ideas = {
             }
 
            modifier = {
-            conscription_factor = -0.6
+            reccruitable_population_factor = -0.6
            }
-        }
+    }
 
-    
-        wasted_infrastructure = {
-        picture = usa_great_depression
+    country = {
+        wasted_infrastructure
+        icon = generic_infrastructure
 
          allowed = {
                 original_tag = PEK
             }
         
         modifier = {
-            state_production_speed_buildings_factor = -0.9
-         }
+            infrastructure_building_speed = -0.9
         }
+    }
 
-    
-        what_are_factories = {
-        picture = GFX_goal_generic_industry
+    country = {
+        what_are_factories
+        icon = GFX_goal_generic_industry
 
         allowed = {
             original_tag = PEK
         }
         modifier = {
-            industrial_capacity_factory = -0.5
+            factory_output = -0.5
             
-         }
         }
+    }
 
-        PEK_reunified_pinguins = {
-       picture = usa_great_depression
+    PEK_reunified_pinguins = {
+        icon = generic_manpower
 
          allowed = {
                 original_tag = PEK
             }
         
         modifier = {
-           conscription_factor = -0.25
-         }
+            recruitable_population_factor = 0.25
+            recruitable_population = 0.05
         }
-    
+    }
+}
 
+PEK_factory_output_boost = {
+    icon = GFX_idea_generic_industry
+    allowed = {
+        original_tag = PEK
+    }
 
-        PEK_factory_output_boost = {
-        picture = GFX_idea_generic_industry
-        allowed = {
-           original_tag = PEK
-        }
+    modifier = {
+        factory_output = 0.15
+    }
+}
 
-        modifier = {
-            industrial_capacity_factory = 0.15
-         }
-        }
+PEK_factory_output_25 = {
+    icon = GFX_idea_generic_industry
+    allowed = {
+        original_tag = PEK
+    }
 
-        PEK_factory_output = {
-          picture = GFX_idea_generic_industry
-          allowed = {
-              original_tag = PEK
-           }
-
-           modifier = {
-         industrial_capacity_factory = 0.25
-         }
-       }  
-
-       PEK_driving_steel_things
-       icon = GFX_goal_generic_army_tanks
-       allowed = { original_tag = PEK}
-
-       modifier = {
-        production_cost_armor_factor = -0.1
-       }
+    modifier = {
+        factory_output = 0.25
     }
 }

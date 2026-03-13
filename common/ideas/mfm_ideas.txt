@@ -25,11 +25,6 @@ ideas = {
         }
     
 
-
-    
-        scattered_pinguins
-           icon = generic_manpower
-
    
         scattered_pinguins = {
           icon = usa_great_depression
@@ -45,12 +40,6 @@ ideas = {
            }
     }
 
-
-    
-        wasted_infrastructure
-        icon = generic_infrastructure
-
-    
         wasted_infrastructure = {
         icon = usa_great_depression
 
@@ -60,7 +49,7 @@ ideas = {
             }
         
         modifier = {
-            infrastructure_construction_speed = -0.9
+            production_speed_infrastructure_factor = -0.9
         }
     }
 
@@ -115,13 +104,13 @@ ideas = {
  }
       
 
-       PEK_driving_steel_things = {
-       icon = GFX_goal_generic_army_tanks
-       allowed = { original_tag = PEK}
+       #PEK_driving_steel_things = {
+       #icon = GFX_goal_generic_army_tanks
+       #allowed = { original_tag = PEK}
 
-       modifier = {
-        production_cost_armor_factor = -0.1
-       }
-     }
-    }
+       #modifier = {
+        #production_cost_armor_factor = -0.1
+       #}
+     #}
+    #}
 }

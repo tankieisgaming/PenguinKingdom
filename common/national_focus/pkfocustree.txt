@@ -1,14 +1,14 @@
 focus_tree = {
-id = penguin_kingdom_focus
+ id = penguin_kingdom_focus
 
-country = {
-factor = 0
+ country = {
+ factor = 0
 
-modifier = {
-add = 10
-tag = PEK
-}
-}
+ modifier = {
+ add = 10
+ tag = PEK
+ }
+ }
     focus = {
         id = PEK_focus_1
         icon = GFX_goal_generic_political_reform
@@ -17,31 +17,30 @@ tag = PEK
         y = 0
         cost = 5
 
-        completion_reward
+        completion_reward = {
         add_political_power = 200
-
+        }
     }
 
 
 
 
 
- ##   ##   #   #
-#    #  #  #  #
-#  # #  #  # #
- ##   ##    #
+  ##   ##   #   #
+ #    #  #  #  #
+ #  # #  #  # #
+  ##   ##    #
 
 
 
 
 
-focus = {
+ focus = {
     id = ARG_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
-    cost = 5
-
-    x = 0
-    y = 0
+     x = 0
+     y = 0
+     cost = 5
 
     available = {
         original_tag = PEK
@@ -50,7 +49,7 @@ focus = {
     completion_reward = {
         add_political_power = 115
     }
-}
+ }
 
 
 
@@ -66,7 +65,7 @@ focus = {
 
 
 
-focus = {
+ focus = {
     id = PEK_rebuilding_the_nation
     icon = GFX_goal_generic_construct_civ_factory
     cost = 7
@@ -85,9 +84,9 @@ focus = {
             instant_build = yes
         }
     }
-}
+ }
 
-focus = {
+ focus = {
     id = PEK_expand_existing_factories
     icon = GFX_goal_generic_construct_civ_factory
     cost = 5

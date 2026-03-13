@@ -245,7 +245,7 @@ focus_tree = {
     x = 2
     y = 1
     available = {
-        original_tag PEK
+        original_tag = PEK
     }
 
     completion_reward = {
@@ -315,7 +315,7 @@ focus_tree = {
     y = 5
     cost = 9
 
-    prerequisite = 
+    prerequisite = { focus = PEK_focus_1}
     available = {
         tag = PEK
         CHI = { exists = yes }
@@ -873,7 +873,7 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_intesify_gun_training
+    id = PEK_intensify_gun_training
     icon = GFX_goal_generic_navy
     x = 12
     y = 16
@@ -888,7 +888,7 @@ focus_tree = {
         navy_hit_chance = 0.1
         navy_torpedo_hit_chance = 0.2
         navy_positioning = 0.1
-        navy_produciton_cost_factor = 0.2
+        navy_production_cost_factor = 0.2
     }
  }
 
@@ -1011,7 +1011,6 @@ focus_tree = {
             level = 3
         }
      }
-    }
      ai_will_do = {
             factor = 10
         }
@@ -1077,11 +1076,13 @@ focus_tree = {
         add_building_construction = {
             state = 949
             type = air_base
-            level 5
+            level = 5
         }
     }
 
-    ai_will_do = 1
+    ai_will_do = {
+        1
+    }
  }
 
  focus = {

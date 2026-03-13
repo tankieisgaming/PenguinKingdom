@@ -100,5 +100,13 @@ ideas = {
          industrial_capacity_factory = 0.25
          }
        }  
+
+       PEK_driving_steel_things
+       icon = GFX_goal_generic_army_tanks
+       allowed = { original_tag = PEK}
+
+       modifier = {
+        production_cost_armor_factor = -0.1
+       }
     }
 }

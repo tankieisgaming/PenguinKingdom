@@ -118,7 +118,7 @@ focus_tree = {
     cost = 7
     x = 1
     y = 3 
-    mutually_exclusive ={ PEK_build_up_the_countryside }
+    mutually_exclusive = { PEK_build_up_the_countryside }
 
    
 
@@ -169,7 +169,7 @@ focus_tree = {
     id = PEK_build_up_the_countryside
     icon = GFX_goal_generic_construct_infrastructure
     cost = 7
-    mutually_exclusive = PEK_we_need_some_roads
+    mutually_exclusive = { PEK_we_need_some_roads }
 
     x = 2
     y = 3
@@ -257,43 +257,6 @@ focus_tree = {
     }
  }
 
- focus = {
-    id = PEK_driving_steel_things
-    icon = GFX_goal_generic_army_tanks
-    cost = 10
-    x = 2
-    y = 2
-
-    available = {original_tag = PEK}
-
-    completion_reward = {
-        add_ideas = PEK_driving_steel_things
-        add_tech_bonus = {
-            name = tank_research_bonus
-            bonus = 3
-            uses = 1
-            category = armor
-        }
-    }
- }
-
- focus = {
-    id = PEK_place_more_fuel_consuming_parts_in_our_tanks
-    icon = GFX_goal_generic_army_tanks
-    cost = 10
-
-    available = {original_tag = PEK}
-
-    completion_reward {
-        add_tech_bonus = {
-            name = faster_tank_research_bonus
-            bonus = 1.5
-            uses = 2
-            category = light_armor
-        }
-        add_army_experience = 50
-    }
- }
 
  focus = {
     id = PEK_continuing_building_up_the_military
@@ -410,7 +373,7 @@ focus_tree = {
     y = 5
     cost = 6
 
-    prerequisite = { focus = PEK_integrate_chile }
+    prerequisite = { focus = CHI_political_effort }
 
     available = {
         tag = PEK
@@ -538,50 +501,6 @@ focus_tree = {
     }
  }
 
-
-    PEK_form_the_greater_kingdom = {
-        icon = GFX_goal_generic_major_war
-        allowed = {
-            tag = PEK
-        }
-
-        visible = {
-            tag = PEK
-        }
-
-        PEK_form_the_greater_kingdom = {
-
-            icon = GFX_goal_generic_national_unity
-
-            available = {
-                has_full_control_of_state = 529
-                has_full_control_of_state = 530
-                has_full_control_of_state = 531
-                has_full_control_of_state = 302
-                has_full_control_of_state = 303
-            }
-
-            cost = 150
-
-            complete_effect = {
-
-                add_stability = 0.15
-                add_war_support = 0.15
-                add_political_power = 200
-
-                add_core_of = 529
-                add_core_of = 530
-                add_core_of = 531
-                add_core_of = 302
-                add_core_of = 303
-            }
-
-            ai_will_do = {
-                factor = 1
-            }
-        }
-    }
-}
 
 
 
@@ -829,33 +748,8 @@ focus_tree = {
  #   #  #  #  #  #  #    #
 
 
-focus = {
-    id = PEK_need_more_troops
-    icon = GFX_goal_generic_political_pressure
-    x = 5
-    y = 1
-    cost = 10
 
-    prerequisite = { focus = PEK_the_start_of_the_nation }
 
-    completion_reward = {
-        add_manpower = 50000
-    }
-}
-
-focus = {
-    id = PEK_penguin_commandos
-    icon = GFX_goal_generic_special_forces
-    x = 7
-    y = 3
-    cost = 10
-
-    prerequisite = { focus = PEK_need_more_troops }
-
-    completion_reward = {
-        add_manpower = 20000
-    }
-}
 
  focus = {
     id = PEK_make_a_military
@@ -865,7 +759,6 @@ focus = {
     cost = 5
 
     available = { original_tag = PEK }
-    prerequisite = { focus = PEK_need_more_troops }
     
     completion_reward = {
         add_building_construction = {
@@ -959,7 +852,6 @@ focus = {
     cost = 10
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_start_the_navy }
 
     completion_reward = {
        507 = {
@@ -975,14 +867,13 @@ focus = {
  }
 
  focus = {
-    id = PEK_intensify_gun_training
+    id = PEK_intesify_gun_training
     icon = GFX_goal_generic_navy
     x = 12
     y = 16
     cost = 10
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_expand_the_navy }
 
     completion_reward = {
         navy_hit_chance = 0.2  
@@ -1003,7 +894,6 @@ focus = {
     cost = 14
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_intensify_gun_training }
 
     completion_reward = {
         light_attack_factor = 0.3
@@ -1038,7 +928,6 @@ focus = {
     cost = 20
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_submarines_expansions }
 
     completion_reward = {
         add_tech_bonus = {
@@ -1077,7 +966,6 @@ focus = {
     cost = 5
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_capital_ships_buildup }
 
     completion_reward = {
         add_tech_bonus = {
@@ -1109,7 +997,6 @@ focus = {
     cost = 5
 
     available = { original_tag = PEK}
-    prerequisite = { focus = PEK_make_a_military }
 
     completion_reward = {
         add_building_construction = {
@@ -1118,7 +1005,7 @@ focus = {
             level = 3
         }
      }
-    
+    }
      ai_will_do = {
             factor = 10
         }
@@ -1133,7 +1020,6 @@ focus = {
     cost = 5
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_start_the_air }
 
     completion_reward = {
         air_attack_factor = 0.5
@@ -1154,7 +1040,6 @@ focus = {
     cost = 7
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_extend_pilot_training }
 
     completion_reward = {
         production_factory_max_efficiency_factor = 0.5
@@ -1180,7 +1065,6 @@ focus = {
     cost = 2
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_increase_production_of_air }
 
     completion_reward = {
        
@@ -1202,7 +1086,6 @@ focus = {
     cost = 5
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_expand_air_bases }
 
     completion_reward = {
         add_tech_bonus = {
@@ -1223,7 +1106,6 @@ focus = {
     cost = 3
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_putting_weapons_on_planes }
 
     completion_reward = {
         add_tech_bonus = {
@@ -1242,7 +1124,6 @@ focus = {
     cost = 5
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_spy_planes }
 
     completion_reward = {
     add_tech_bonus = {
@@ -1268,7 +1149,6 @@ focus = {
     cost = 5
 
     available = {original_tag = PEK}
-    prerequisite = { focus = PEK_putting_bombs_on_tactical_planes }
 
     completion_reward = {
         add_tech_bonus = {

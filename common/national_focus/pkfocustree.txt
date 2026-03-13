@@ -792,7 +792,19 @@ focus_tree = {
  #   #  #  #  #  #  #    #
 
 
+focus = {
+    id = PEK_need_more_troops
+    icon = GFX_goal_generic_political_pressure
+    x = 5
+    y = 1
+    cost = 10
 
+    prerequisite = { focus = PEK_the_start_of_the_nation}
+
+    completion_reward = {
+        add_manpower = 50000
+    }
+}
 
 
  focus = {

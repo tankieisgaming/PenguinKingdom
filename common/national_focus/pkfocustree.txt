@@ -373,7 +373,7 @@ focus_tree = {
     y = 5
     cost = 6
 
-    prerequisite = { focus = CHI_political_effort }
+    prerequisite = { focus = PEK_integrate_chile }
 
     available = {
         tag = PEK
@@ -429,6 +429,23 @@ focus_tree = {
         factor = 1.2
     }
  }
+
+focus = {
+    id = PEK_integrate_argentina
+    icon = GFX_goal_generic_political_pressure
+    x = 6
+    y = 7
+    cost = 10
+
+    prerequisite = { focus = PEK_claim_argentina }
+
+    completion_reward = {
+        annex_country = {
+            target = ARG
+            transfer_troops = yes
+        }
+    }
+}
 
 
  focus = {
@@ -501,6 +518,50 @@ focus_tree = {
     }
  }
 
+
+    PEK_form_the_greater_kingdom = {
+        icon = GFX_goal_generic_major_war
+        allowed = {
+            tag = PEK
+        }
+
+        visible = {
+            tag = PEK
+        }
+
+        PEK_form_the_greater_kingdom = {
+
+            icon = GFX_goal_generic_national_unity
+
+            available = {
+                has_full_control_of_state = 529
+                has_full_control_of_state = 530
+                has_full_control_of_state = 531
+                has_full_control_of_state = 302
+                has_full_control_of_state = 303
+            }
+
+            cost = 150
+
+            complete_effect = {
+
+                add_stability = 0.15
+                add_war_support = 0.15
+                add_political_power = 200
+
+                add_core_of = 529
+                add_core_of = 530
+                add_core_of = 531
+                add_core_of = 302
+                add_core_of = 303
+            }
+
+            ai_will_do = {
+                factor = 1
+            }
+        }
+    }
+}
 
 
 

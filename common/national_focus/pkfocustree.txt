@@ -799,13 +799,26 @@ focus = {
     y = 1
     cost = 10
 
-    prerequisite = { focus = PEK_the_start_of_the_nation}
+    prerequisite = { focus = PEK_the_start_of_the_nation }
 
     completion_reward = {
         add_manpower = 50000
     }
 }
 
+focus = {
+    id = PEK_penguin_commandos
+    icon = GFX_goal_generic_special_forces
+    x = 7
+    y = 3
+    cost = 10
+
+    prerequisite = { focus = PEK_need_more_troops }
+
+    completion_reward = {
+        add_manpower = 20000
+    }
+}
 
  focus = {
     id = PEK_make_a_military

@@ -651,7 +651,7 @@ focus_tree = {
             category = infantry_weapons
             duration = 365
           }
-          add_army_experience = 50
+          army_experience = 50
     }
 
     ai_will_do = {
@@ -686,7 +686,7 @@ focus_tree = {
             instant_build = yes
         }
        }
-        add_navy_experience = 50
+        navy_experience = 50
     }
 
     ai_will_do = {
@@ -767,8 +767,9 @@ focus_tree = {
             name = sub_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavalsubmarine
+            category = ship_hull_sub
         }
+        add_ideas = PEK_great_penguin_wolf_packs
     }   
  }
 
@@ -786,27 +787,27 @@ focus_tree = {
             name = acr_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavalcarrier
+            category = ship_hull_carrier
         }
          add_tech_bonus = {
             name = bcr_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavalbattlecruiser
+            category = heavy_ship_hull
         }
          add_tech_bonus = {
             name = cru_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavalcruiser
+            category = ship_hull_cruiser
         }
          add_tech_bonus = {
             name = bts_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavalbattleship
+            category = heavy_ship_hull
         }
-        add_navy_experience = 100
+        navy_experience = 100
     }
  }
 
@@ -824,13 +825,13 @@ focus_tree = {
             name = des_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavaldestroyer
+            category = ship_hull_light
         }
          add_tech_bonus = {
             name = lcr_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = mtgnavallightcruiser
+            category = ship_hull_cruiser
         }
     }
  }
@@ -935,7 +936,7 @@ focus_tree = {
     ai_will_do = {
         factor = 1
     }
- }
+ }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
 
  focus = {
     id = PEK_putting_weapons_on_planes
@@ -951,9 +952,15 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = aircraft_weapon
+            category = air_weapon
         }
-        add_air_experience = 35
+        add_tech_bonus = {
+            name = aiframe_aot_bonus
+            uses = 3
+            ahead_reduction = 2
+            category = small_plane_airframe
+        }
+        air_experience = 35
     }
  }
 
@@ -970,7 +977,7 @@ focus_tree = {
         add_tech_bonus = {
             name = aircraft_recon_aot_bonus              
             bonus = 3.0
-            category = aircraft_special
+            category = recon_camera
         }
     }
  }
@@ -989,13 +996,13 @@ focus_tree = {
             name = tactical_bomber_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = tactical_bomber
+            category = large_plane_airframe
         }
         add_tech_bonus = {
             name = aircraft_bomb_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = aircraft_bomb
+            category = plane_bomb_bays
         }
     }
  }
@@ -1014,15 +1021,15 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = strategic_bomber
+            category = large_plane_airframe
         }
         add_tech_bonus = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = aircraft_bomb
+            category = plane_bomb_bays
         }
-        add_air_experience = 50
+        air_experience = 50
     }
  }
 
@@ -1040,7 +1047,7 @@ focus_tree = {
     available = { original_tag = PEK }
 
     completion_reward = {
-        add_project_progress = {
+        add_breaktrough_progress = {
             project = nuclear_reactor
             progress = 0.5
         }
@@ -1049,6 +1056,30 @@ focus_tree = {
     ai_will_do = {
         factor = 1
     }
+  }
+ 
+ focus = {
+    id = PEK_secret_underground_stash
+    icon = GFX_goal_generic_construct_nuclear_reactor
+    x = 13
+    y = 7
+    cost = 15
+
+    prerequisite = {
+        focus = PEK_nuclear_research
+        nuclear_fission_bomb_project
+    }
+
+    available = {original_tag = PEK}
+
+    completion_reward = {
+        add_nuclear_bombs = 10
+    }
  }
+
+
+
+
 }
+
 

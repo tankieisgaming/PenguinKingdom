@@ -933,7 +933,7 @@ focus_tree = {
     }
 
     ai_will_do = {
-        1
+        factor = 1
     }
  }
 

@@ -715,6 +715,7 @@ focus_tree = {
          add_extra_state_shared_building_slots = 5
         }
       naval_dockyard_output_factor = 0.5
+      add_ideas = PEK_great_penguin_navy
      }
  }
 

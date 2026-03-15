@@ -723,13 +723,7 @@ focus_tree = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        navy_hit_chance = 0.2  
-        navy_torpedo_hit_chance = 0.25
-        navy_torpedo_screen_penetration_factor = 0.2
-        navy_hit_chance = 0.1
-        navy_torpedo_hit_chance = 0.2
-        navy_positioning = 0.1
-        navy_production_cost_factor = 0.2
+        add_ideas = PEK_great_penguin_navy
     }
  }
 
@@ -743,8 +737,7 @@ focus_tree = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        light_attack_factor = 0.3
-        ship_armor_factor = 0.9
+        add_ideas = PEK_high_quality_materials
     }
  }
 
@@ -785,12 +778,6 @@ focus_tree = {
             category = ship_hull_carrier
         }
          add_tech_bonus = {
-            name = bcr_aot_bonus              
-            uses = 2                  
-            ahead_reduction = 2
-            category = heavy_ship_hull
-        }
-         add_tech_bonus = {
             name = cru_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
@@ -803,6 +790,7 @@ focus_tree = {
             category = heavy_ship_hull
         }
         navy_experience = 100
+        add_ideas = PEK_great_penguin_big_ships
     }
  }
 
@@ -822,12 +810,8 @@ focus_tree = {
             ahead_reduction = 2
             category = ship_hull_light
         }
-         add_tech_bonus = {
-            name = lcr_aot_bonus              
-            uses = 2                  
-            ahead_reduction = 2
-            category = ship_hull_cruiser
-        }
+        add_ideas = PEK_little_ships
+      }
     }
  }
 

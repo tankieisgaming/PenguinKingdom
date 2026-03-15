@@ -102,7 +102,40 @@ ideas = {
       industrial_capacity_factory = 0.25
     } 
  }
-      
+    PEK_high_quality_materials = {
+        picture = GFX_goal_generic_navy
+
+        allowed = {
+           original_tag = PEK
+        }
+
+        modifier = {
+            ship_armor_factor = 0.35
+        }
+    }
+   
+    PEK_little_ships = {
+        picture = GFX_goal_generic_navy
+        allowed =  {
+            original_tag = PEK
+        }
+
+        modifer = {
+            light_cruiser_speed = 0.5
+            destroyer_speed = 0.5
+            light_cruiser_convoy_escort_effiency = 0.5
+            destroyer_convoy_escort_effiency = 0.5
+            light_cruiser_detection = 0.5
+            destroyer_detection = 0.5
+            light_cruiser_light_gun_hit_chance_factor = 0.5
+            destroyer_light_gun_hit_chacne_factor = 0.5
+            light_cruiser_submarine_detection_factor = 0.5
+            destroyer_submarine_detection_factor
+            
+
+        }
+    }
+   
     PEK_great_penguin_big_ships = {
         picture = GFX_goal_generic_navy
         allowed = {
@@ -156,7 +189,7 @@ ideas = {
         
         modifier = {
             submarine_attack = 0.25
-            sub_retreat_speed = 0.1
+            sub_retreat_speed = 0.15
             submarine_visibility_reduction = -0.35
             submarine_convoy_raiding_efficiency_factor = 0.5
             submarine_naval_torpedo_cooldown_factor = 0.5

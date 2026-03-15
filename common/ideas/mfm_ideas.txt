@@ -110,7 +110,7 @@ ideas = {
         }
 
         modifier = {
-            ship_armor_factor = 0.35
+            ship_armor_vlaue = 30
         }
     }
    
@@ -121,18 +121,12 @@ ideas = {
         }
 
         modifier = {
-            light_cruiser_speed = 0.5
-            destroyer_speed = 0.5
-            light_cruiser_convoy_escort_effiency = 0.5
-            destroyer_convoy_escort_effiency = 0.5
-            light_cruiser_detection = 0.5
-            destroyer_detection = 0.5
-            light_cruiser_light_gun_hit_chance_factor = 0.5
-            destroyer_light_gun_hit_chacne_factor = 0.5
-            light_cruiser_submarine_detection_factor = 0.5
-            destroyer_submarine_detection_factor
-            
-
+            light_cruiser_speed_factor = 0.5
+            destroyer_speed_factor = 0.5
+            convoy_escort_effiency_factor = 0.5
+            surface_detection = 0.5
+            navy_light_gun_hit_chance_factor = 0.5
+            sub_detection = 0.5
         }
     }
    
@@ -143,8 +137,8 @@ ideas = {
         }
 
         modifier = {
-          heavy_cruiser_speed = 0.5
-          battle_cruiser_speed = 0.25
+          heavy_cruiser_speed_factor = 0.5
+          battle_cruiser_speed_factor = 0.25
           battleship_speed = 0.2
           heavy_cruiser_max_range = 0.5
           battle_cruiser_max_range = 0.25
@@ -208,5 +202,5 @@ ideas = {
         #production_cost_armor_factor = -0.1
        #}
      #}
-    #}
+    }
 }

@@ -121,8 +121,6 @@ focus_tree = {
     
     cost = 7
     
-    mutually_exclusive = {PEK_build_up_the_countryside}
-
     available = {
         original_tag = PEK
     }

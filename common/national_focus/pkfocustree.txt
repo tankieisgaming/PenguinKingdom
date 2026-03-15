@@ -340,7 +340,7 @@ focus_tree = {
     y = 5
     cost = 6
 
-    prerequisite = { focus = CHI_political_effort }
+    prerequisite = { focus = PEK_integrate_chile }
 
     available = {
         tag = PEK
@@ -372,7 +372,7 @@ focus_tree = {
     y = 7
     cost = 10
 
-    prerequisite = { focus = ARG_integrate_chile }
+    prerequisite = { focus = PEK_claim_argentina }
 
     available = {
         tag = PEK
@@ -488,25 +488,19 @@ focus_tree = {
     y = 5
     cost = 10
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_integrate_peru_coast } 
 
     available = {
         tag = PEK
         NAM = { exists = yes }
         ZAF = { exists = yes }
-        NOT = { has_war_with = NAM }
-        NOT = { has_war_with = ZAF }
+        NOT = { has_war_with = SAF }
     }
 
     completion_reward = {
         create_wargoal = {
             type = annex_everything
-            target = NAM
-        }
-
-        create_wargoal = {
-            type = annex_everything
-            target = ZAF
+            target = SAF
         }
 
         add_stability = -0.05
@@ -536,7 +530,7 @@ focus_tree = {
     y = 5
     cost = 4
 
-    prerequisite = { focus = XXX_military_expansion } 
+    prerequisite = { focus = PEK_claim_namibia_southafrica } 
 
     available = {
         tag = PEK

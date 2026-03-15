@@ -492,8 +492,7 @@ focus_tree = {
 
     available = {
         tag = PEK
-        NAM = { exists = yes }
-        ZAF = { exists = yes }
+        SAF = { exists = yes }
         NOT = { has_war_with = SAF }
     }
 

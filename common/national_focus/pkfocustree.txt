@@ -139,12 +139,13 @@ focus_tree = {
  focus = {
     id = PEK_capital_industrial_push
     icon = GFX_goal_generic_industry
-    cost = 5
-    prerequisite = PEK_we_need_some_roads
-
     x = 1
     y = 4
-
+   
+    cost = 5
+   
+    prerequisite = PEK_we_need_some_roads
+    
     available = {
         original_tag = PEK
     }

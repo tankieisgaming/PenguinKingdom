@@ -194,4 +194,23 @@ ideas = {
        #}
      #}
     }
+  
+  PEK_air_factory = {
+       production_factory_max_efficiency_factor = 0.5
+        production_factory_efficiency_gain_factor = 0.5
+  }
+  
+  
+  PEK_penguins_who_are_smart_to_fly = {
+      air_attack_factor = 0.5
+        air_night_factor = 0.5
+        air_experience_factor = -0.05
+  }
+
+
+
+
+
+
 }
+

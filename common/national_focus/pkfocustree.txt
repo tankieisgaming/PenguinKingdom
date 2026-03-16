@@ -856,9 +856,9 @@ focus_tree = {
     available = {original_tag = PEK}
 
     completion_reward = {
-        air_attack_factor = 0.5
-        air_night_factor = 0.5
-        air_experience_factor = -0.05
+        add_ideas = {
+            PEK_penguins_who_are_smart_to_fly
+        }
     }
     
      ai_will_do = {
@@ -882,8 +882,9 @@ focus_tree = {
             level = 3
         }
        }
-        production_factory_max_efficiency_factor = 0.5
-        production_factory_efficiency_gain_factor = 0.5
+        add_ideas = {
+            PEK_air_factory
+        }
      
     }
     

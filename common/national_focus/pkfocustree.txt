@@ -1069,8 +1069,9 @@ focus_tree = {
             category = cat_air_bombs
         }
         air_experience = 50
+        add_ideas = PEK_penguins_who_are_smart_to_fly
     }
-    add_ideas =  PEK_penguins_who_are_smart_to_fly
+   
  }
 
 

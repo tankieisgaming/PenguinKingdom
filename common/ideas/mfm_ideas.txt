@@ -240,8 +240,8 @@ ideas = {
 
     modifier = {
       air_attack_factor = 0.5
-        air_night_factor = 0.5
-        air_experience_factor = -0.05
+        air_night_penalty = -0.5
+        air_experience_gain_factor = -0.05
     }
   }
 

@@ -1118,7 +1118,7 @@ focus_tree = {
 
     available = {
         original_tag = PEK
-        has_completed_special_project = sp_nuclear_bomb
+        has_nukes = 1
     }
 
     completion_reward = {

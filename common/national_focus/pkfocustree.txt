@@ -1092,7 +1092,7 @@ focus_tree = {
             name = PEK_nuclear_project
             bonus = 1.5
             uses = 1
-            category = nuclear7
+            category = nuclear
         } 
         add_breakthrough_progress = {
 					specialization = specialization_nuclear
@@ -1118,7 +1118,7 @@ focus_tree = {
 
     available = {
         original_tag = PEK
-        has_nukes = 1
+        has_completed_special_project = nuclear_bomb
     }
 
     completion_reward = {

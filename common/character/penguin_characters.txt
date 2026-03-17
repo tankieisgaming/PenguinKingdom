@@ -21,3 +21,24 @@ characters = {
  }
 
 }
+
+PEK_skipper = {
+  name = "Admiral Kowalski"
+  portraits = {
+   navy = { texturefile = "gfx/leaders/PEK/PEK_kowalski.dds" }
+  }
+
+  corps_commander = {
+   attack_skill = 2
+   defense_skill = 4
+   planning_skill = 7
+   logistics_skill = 3
+  }
+
+  traits = {
+   carreer_officer
+   engineer_officer
+   commando
+  }
+ }
+

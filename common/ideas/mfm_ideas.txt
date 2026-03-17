@@ -166,7 +166,7 @@ ideas = {
             navy_submarine_defence_factor = 0.5
             navy_submarine_detection_factor = 0.5
             screening_efficiency = 0.5
-            naval_light_gun_hit_factor = 0.5
+            naval_light_gun_hit_chance_factor = 0.5
 
         }
     }
@@ -184,7 +184,7 @@ ideas = {
     }
     
     PEK_great_penguin_wolf_packs = {
-        piscture = GFX_goal_generic_navy
+        picture = GFX_goal_generic_navy
         allowed =  {
             original_tag = PEK
                     }
@@ -235,7 +235,7 @@ ideas = {
   PEK_penguins_who_are_smart_to_fly = {
     picture = GFX_goal_generic_air
     allowed = {
-        original_tag
+        original_tag = PEK
     }
 
     modifier = {

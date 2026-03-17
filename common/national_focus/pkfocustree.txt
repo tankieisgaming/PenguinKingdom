@@ -1087,10 +1087,17 @@ focus_tree = {
     available = { original_tag = PEK }
 
     completion_reward = {
+        add_tech_bonus = {
+            name = PEK_nuclear_project
+            bonus = 1.5
+            uses = 1
+            category = nuclear
+        } 
         add_breaktrough_progress = {
-            project = nuclear_reactor
-            progress = 0.5
+            specialization = specialization_nuclear
+            value = 1
         }
+
     }
 
     ai_will_do = {

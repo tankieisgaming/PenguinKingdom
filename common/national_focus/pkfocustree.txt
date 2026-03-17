@@ -851,6 +851,8 @@ focus_tree = {
  #####  #  ###   
  #   #  #  #  #
 
+ 
+
  focus = {
     id = ARG_start_the_air
     icon = GFX_goal_generic_construct_mil_factory

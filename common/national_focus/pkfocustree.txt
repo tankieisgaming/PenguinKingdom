@@ -967,7 +967,7 @@ focus_tree = {
             name = aiframe_aot_bonus
             uses = 3
             ahead_reduction = 2
-            category = light_air
+            category = small_airframe
         }
         air_experience = 35
     }

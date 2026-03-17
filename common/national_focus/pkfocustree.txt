@@ -1097,7 +1097,7 @@ focus_tree = {
         add_breakthrough_progress = {
 					specialization = specialization_nuclear
 					value = 1
-
+        }
     }
 
     ai_will_do = {

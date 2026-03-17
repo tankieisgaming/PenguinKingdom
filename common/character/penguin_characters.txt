@@ -42,3 +42,37 @@ PEK_skipper = {
   }
  }
 
+ PEK_rico = {
+  name = "Colonel Rico"
+  portraits = {
+   army = { texturefile = "gfx/leaders/PNG/PNG_rico.dds" }
+  }
+  corps_commander = {
+   attack_skill = 5
+   defense_skill = 3
+   planning_skill = 1
+   logistics_skill = 3
+  }
+  traits = { 
+    demolition_expert 
+    fearless 
+    commando 
+    }
+ }
+
+ PEK_private = {
+  name = "Lieutenant Private"
+  portraits = {
+   army = { texturefile = "gfx/leaders/PNG/PNG_private.dds" }
+  }
+  corps_commander = {
+   attack_skill = 2
+   defense_skill = 3
+   planning_skill = 3
+   logistics_skill = 3
+  }
+  traits = { 
+enthusiastic 
+rookie 
+winter_specialist }
+ }

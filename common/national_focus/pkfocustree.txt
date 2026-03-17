@@ -665,7 +665,21 @@ focus_tree = {
         add_ideas = PEK_pinguin_winter_army
     }
  }
+ 
+ focus = {
+    id = PEK_great_steel_driving_logistics
+    icon = GFX_goal_generic_army_tanks
+    x = 11
+    y = 6
+    cost = 5
+    
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_build_the_army}
 
+    completion_reward = {
+        add_ideas = PEK_steel_driving_things_logistics
+    }
+ }
 
 
  #  #    #    #   #  #   #

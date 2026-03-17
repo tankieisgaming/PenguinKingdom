@@ -651,6 +651,21 @@ focus_tree = {
     }
  }
 
+ focus = {
+    id = PEK_winter_army
+    icon = GFX_goal_generic_army
+    x = 10
+    y = 6
+    cost = 5
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_build_the_army}
+
+    completion_reward = {
+        add_ideas = PEK_pinguin_winter_army
+    }
+ }
+
 
 
  #  #    #    #   #  #   #

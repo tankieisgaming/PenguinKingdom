@@ -164,7 +164,38 @@ focus_tree = {
  }
 
  #### COUNTRYSIDE ####
-
+ 
+ focus = {    
+    id = PEK_build_up_the_countryside   
+    icon = GFX_goal_generic_construct_infrastructure
+    cost = 7
+    mutually_exclusive = PEK_we_need_some_roads
+    
+    x = 2
+    y = 3
+    
+    available = {
+        original_tag = PEK
+    }
+  
+    completion_reward = {
+        random_owned_controlled_state = {
+            add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+        }
+     
+      random_owned_controlled_state = {           
+         add_building_construction = {
+                type = infrastructure
+                level = 2
+                instant_build = yes
+            }
+     }
+    }
+ }
 
  focus = {
     id = PEK_industrial_boost
@@ -782,7 +813,7 @@ focus_tree = {
             name = sub_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = ship_hull_sub
+            category = ss_tech
         }
         add_ideas = PEK_great_penguin_wolf_packs
     }   
@@ -802,19 +833,19 @@ focus_tree = {
             name = acr_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = ship_hull_carrier
+            category = cv_tech
         }
          add_tech_bonus = {
             name = cru_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = ship_hull_cruiser
+            category = cl_tech
         }
          add_tech_bonus = {
             name = bts_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = heavy_ship_hull
+            category = bb_tech
         }
         navy_experience = 100
         add_ideas = PEK_great_penguin_big_ships
@@ -835,7 +866,7 @@ focus_tree = {
             name = des_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = ship_hull_light
+            category = dd_tech
         }
         add_ideas = PEK_little_ships
       }
@@ -961,13 +992,13 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = air_equipment
+            category = cat_air_guns
         }
         add_tech_bonus = {
             name = aiframe_aot_bonus
             uses = 3
             ahead_reduction = 2
-            category = small_airframe
+            category = light_air
         }
         air_experience = 35
     }
@@ -986,7 +1017,7 @@ focus_tree = {
         add_tech_bonus = {
             name = aircraft_recon_aot_bonus              
             bonus = 3.0
-            category = recon_camera
+            category = plane_modules_tech
         }
     }
  }
@@ -1009,9 +1040,9 @@ focus_tree = {
         }
         add_tech_bonus = {
             name = aircraft_bomb_aot_bonus              
-            uses = 2                  
+            uses = 1          
             ahead_reduction = 2
-            category = air_equipment
+            category = cat_air_bombs
         }
     }
  }
@@ -1036,7 +1067,7 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = air_equipment
+            category = cat_air_bombs
         }
         air_experience = 50
     }

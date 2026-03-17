@@ -1113,11 +1113,13 @@ focus_tree = {
     cost = 15
 
     prerequisite = {
-        focus = PEK_nuclear_research
-       has_completed_special_project = {sp_nuclear_bomb}
+       focus = PEK_nuclear_research
     }
 
-    available = {original_tag = PEK}
+    available = {
+        original_tag = PEK
+        has_completed_special_project = sp_nuclear_bomb
+    }
 
     completion_reward = {
         add_nuclear_bombs = 10

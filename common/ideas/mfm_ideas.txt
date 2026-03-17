@@ -140,7 +140,7 @@ ideas = {
     }
 
     modifier = {
-        supply_cconsumption_factor = -0.5
+        supply_cconsumption_factor = -0.9
     }
    }
    

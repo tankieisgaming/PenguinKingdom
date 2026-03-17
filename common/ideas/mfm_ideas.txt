@@ -133,7 +133,7 @@ ideas = {
    }
    }
    PEK_steel_driving_things_logistics = {
-    pciture = GFX_goal_generic_army_tanks
+    picture = GFX_goal_generic_army_tanks
 
     allowed = {
         original_tag = PEK
@@ -213,38 +213,42 @@ ideas = {
                 navy_visibility = -2
                 naval_hit_chance = 0.5
                 naval_speed_factor = 1
-                naval_fuel_consumption_factor = -0.2
+                navy_fuel_consumption_factor = -0.2
             }
         
     }
 
    
-       #PEK_driving_steel_things = {
-       # picture = GFX_goal_generic_army_tanks
-       #allowed = { original_tag = PEK}
-
-       #modifier = {
-        #production_cost_armor_factor = -0.1
-       #}
-     #}
-    }
   
   PEK_air_factory = {
+    picture = GFX_goal_generic_air
+    allowed = {
+        original_tag = PEK
+    }
+    modifier = {
        production_factory_max_efficiency_factor = 0.5
         production_factory_efficiency_gain_factor = 0.5
+    }
   }
   
   
   PEK_penguins_who_are_smart_to_fly = {
+    picture = GFX_goal_generic_air
+    allowed = {
+        original_tag
+    }
+
+    modifier = {
       air_attack_factor = 0.5
         air_night_factor = 0.5
         air_experience_factor = -0.05
+    }
   }
 
 
 
 
 
-
+    }
 }
 

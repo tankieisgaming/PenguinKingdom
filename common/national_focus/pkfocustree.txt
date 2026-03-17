@@ -1114,7 +1114,7 @@ focus_tree = {
 
     prerequisite = {
         focus = PEK_nuclear_research
-       special_project = {nuclear_fission_bomb_project}
+       has_completed_special_project = nuclear_fission_bomb_project
     }
 
     available = {original_tag = PEK}

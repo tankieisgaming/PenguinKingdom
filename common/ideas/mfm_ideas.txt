@@ -121,10 +121,8 @@ ideas = {
         }
 
         modifier = {
-            convoy_escort_efficiency_factor = 0.5
-            surface_detection_factor = 0.5
-            light_gun_hit_chance_factor = 0.5
-            sub_detection_factor = 0.5
+            ship_hull_screen_armor_factor = 0.25
+            ship_hull_capital_speed_factor = 0.25
         }
     }
    
@@ -135,13 +133,8 @@ ideas = {
         }
 
         modifier = {
-          heavy_gun_hit_chance_factor = 0.5
-          heavy_cruiser_screen_attack_factor = 0.3
-          battle_cruiser_screen_attack_factor = 0.25
-          battleship_screen_attack_factor = 0.2
-          heavy_cruiser_production_cost_factor = 0.15
-          battle_cruiser_production_cost_factor = -0.1
-          battleship_production_cost_factor = -0.25
+          ship_hull_capital_armor_factor = 0.25
+          ship_hull_capital_speed_factor = 0.25
         }
     }
     
@@ -152,39 +145,18 @@ ideas = {
         }
     
         modifier = {
-                naval_positioning = 0.1
-                naval_production_cost_factor = 0.2
-                critical_receive_chance = -0.15
-                navy_anit_air_attack = 30
-                naval_damage_factor = 0.5
-                naval_defense_factor = 0.5
-                naval_detection = 0.5
-                naval_night_attack = 0.05
-                navy_org = 20
-                navy_max_range_factor = 0.75
-                navy_speed_factor = 1.5
+                positioning = 1.5
+                navy_anit_air_attack = 0.5
+                spotting_chance = 0.5
+                repair_speed_factor = 0.5
+                industrial_capacity_dockyard = 0.75
+                naval_coordination = 0.5
+                navy_visibility = -0.2
             }
         
     }
 
-    PEK_great_penguin_wolf_packs = {
-        picture = GFX_goal_generic_navy
-        allowed = {
-            original_tag = PEK
-        }
-        
-        modifier = {
-            submarine_attack = 0.25
-            sub_retreat_speed = 0.15
-            submarine_visibility_reduction = -0.35
-            submarine_convoy_raiding_efficiency_factor = 0.5
-            submarine_naval_torpedo_cooldown_factor = 0.5
-            submarine_naval_torpedo_reveal_chance_factor = -0.5
-            submarine_production_cost_factor = -0.1
-            submarine_speed = 0.5
-        }
-    }
-
+   
        #PEK_driving_steel_things = {
        # picture = GFX_goal_generic_army_tanks
        #allowed = { original_tag = PEK}

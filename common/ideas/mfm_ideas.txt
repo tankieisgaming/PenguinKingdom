@@ -109,7 +109,7 @@ ideas = {
     allowed = {original_tag = PEK}
    }
 
-   moifier = {
+   modifier = {
      dig_in_speed_factor = 0.05
 	max_dig_in_factor = 0.1
 	training_time_factor = -0.1

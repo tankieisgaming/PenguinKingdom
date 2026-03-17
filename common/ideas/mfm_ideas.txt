@@ -132,6 +132,17 @@ ideas = {
 	initiative_factor = 0.02
    }
    
+   PEK_steel_driving_things_logistics = {
+    pciture = GFX_goal_generic_army_tanks
+
+    allowed = {
+        original_tag = PEK
+    }
+
+    modifier = {
+        supply_cconsumption_factor = -0.5
+    }
+   }
    
     PEK_high_quality_materials = {
         picture = GFX_goal_generic_navy

@@ -1094,10 +1094,9 @@ focus_tree = {
             uses = 1
             category = nuclear
         } 
-        add_breaktrough_progress = {
-            specialization = specialization_nuclear
-            value = 1
-        }
+        add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
 
     }
 

@@ -930,13 +930,13 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = air_weapon
+            category = air_equipment
         }
         add_tech_bonus = {
             name = aiframe_aot_bonus
             uses = 3
             ahead_reduction = 2
-            category = small_plane_airframe
+            category = light_air
         }
         air_experience = 35
     }
@@ -974,13 +974,13 @@ focus_tree = {
             name = tactical_bomber_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = large_plane_airframe
+            category = medium_air
         }
         add_tech_bonus = {
             name = aircraft_bomb_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = plane_bomb_bays
+            category = air_equipment
         }
     }
  }
@@ -999,13 +999,13 @@ focus_tree = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = large_plane_airframe
+            category = heavy_air
         }
         add_tech_bonus = {
             name = aircraft_weapon_aot_bonus              
             uses = 2                  
             ahead_reduction = 2
-            category = plane_bomb_bays
+            category = air_equipment
         }
         air_experience = 50
     }

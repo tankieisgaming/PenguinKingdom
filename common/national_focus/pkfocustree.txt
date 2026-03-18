@@ -9,21 +9,6 @@ focus_tree = {
  tag = PEK
  }
  }
-    focus = {
-        id = PEK_focus_1
-        icon = GFX_goal_generic_political_reform
-        x = 99
-        y = 0
-        cost = 5
-
-        completion_reward = {
-        add_political_power = 200
-        }
-    }
-
-
-
-
 
   ##   ##   #   #
  #    #  #  #  #
@@ -116,7 +101,8 @@ focus_tree = {
  focus = {
     id = PEK_we_need_some_roads
     icon = GFX_goal_generic_construct_infrastructure
-    x = 1
+    mutually_exclusive = {PEK_build_up_the_countryside}
+    x = 3
     y = 3
     
     cost = 7
@@ -139,7 +125,7 @@ focus_tree = {
  focus = {
     id = PEK_capital_industrial_push
     icon = GFX_goal_generic_industry
-    x = 1
+    x = 3
     y = 4
    
     cost = 5
@@ -171,7 +157,7 @@ focus_tree = {
     cost = 7
     mutually_exclusive = {focus = PEK_we_need_some_roads}
     
-    x = 2
+    x = 5
     y = 3
     
     available = {
@@ -203,7 +189,7 @@ focus_tree = {
     cost = 6
     prerequisite = {focus = PEK_build_up_the_countryside}
 
-    x = 2
+    x = 5
     y = 4
 
     available = {
@@ -237,10 +223,10 @@ focus_tree = {
  focus = {
     id = PEK_starting_military_construction
     icon = GFX_goal_generic_construct_mil_factory
-    cost = 4
+    cost = 5
 
-    x = 2
-    y = 1
+    x = 4
+    y = 5
     available = {
         original_tag = PEK
     }
@@ -263,8 +249,8 @@ focus_tree = {
     icon = GFX_goal_generic_construct_mil_factory
     cost = 7
 
-    x = 2
-    y = 2
+    x = 4
+    y = 6
     available = {
         original_tag = PEK
     }
@@ -303,8 +289,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_chile
     icon = GFX_goal_generic_territory_or_war
-    x = 10
-    y = 5
+    x = -1
+    y = 1
     cost = 9
 
     prerequisite = { focus = PEK_focus_1}
@@ -330,8 +316,8 @@ focus_tree = {
  focus = {
     id = PEK_integrate_chile
     icon = GFX_goal_generic_propaganda
-    x = 12
-    y = 7
+    x = -1
+    y = 2
     cost = 10
 
     prerequisite = { focus = PEK_claim_chile }
@@ -367,8 +353,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_argentina
     icon = GFX_goal_generic_major_war
-    x = 10
-    y = 5
+    x = -1
+    y = 3
     cost = 6
 
     prerequisite = { focus = PEK_integrate_chile }
@@ -399,8 +385,8 @@ focus_tree = {
  focus = {
     id = PEK_invade_peru
     icon = GFX_goal_generic_major_war
-    x = 13
-    y = 7
+    x = -1
+    y = 4
     cost = 10
 
     prerequisite = { focus = PEK_claim_argentina }
@@ -432,8 +418,8 @@ focus_tree = {
  focus = {
     id = PEK_integrate_peru_coast
     icon = GFX_goal_generic_propaganda
-    x = 14
-    y = 8
+    x = -1
+    y = 5
     cost = 10
 
     prerequisite = { focus = PEK_invade_peru }
@@ -515,8 +501,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_namibia_southafrica
     icon = GFX_goal_generic_major_war
-    x = 10
-    y = 5
+    x = 1
+    y = 6
     cost = 10
 
     prerequisite = { focus = PEK_integrate_peru_coast } 
@@ -556,8 +542,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_australia
     icon = GFX_goal_generic_major_war
-    x = 10
-    y = 5
+    x = 0
+    y = 6
     cost = 4
 
     prerequisite = { focus = PEK_claim_namibia_southafrica } 
@@ -589,8 +575,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_new_zealand
     icon = GFX_goal_generic_major_war
-    x = 11
-    y = 6
+    x = 0
+    y = 7
     cost = 5
 
     prerequisite = { focus = PEK_claim_australia }
@@ -628,8 +614,8 @@ focus_tree = {
  focus = {
     id = PEK_make_a_military
     icon = GFX_goal_generic_political_reform
-    x = 11
-    y = 5
+    x = 8
+    y = 0
     cost = 5
 
     available = { original_tag = PEK }
@@ -660,8 +646,8 @@ focus_tree = {
  focus = {
     id = PEK_build_the_army
     icon = GFX_goal_generic_small_arms
-    x = 10
-    y = 5
+    x = 7
+    y = 1
     cost = 4
 
     available = { original_tag = PEK }
@@ -685,8 +671,8 @@ focus_tree = {
  focus = {
     id = PEK_winter_army
     icon = GFX_goal_generic_army
-    x = 10
-    y = 6
+    x = 7
+    y = 2
     cost = 5
 
     available = {original_tag = PEK}
@@ -700,8 +686,8 @@ focus_tree = {
  focus = {
     id = PEK_great_steel_driving_logistics
     icon = GFX_goal_generic_army_tanks
-    x = 11
-    y = 6
+    x = 7
+    y = 3
     cost = 5
     
     available = {original_tag = PEK}
@@ -723,8 +709,8 @@ focus_tree = {
  focus = {
     id = PEK_start_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
-    x = 10
-    y = 5
+    x = 9
+    y = 1
     cost = 6
 
     available = { original_tag = PEK }
@@ -750,8 +736,8 @@ focus_tree = {
  focus = {
     id = PEK_expand_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
-    x = 10
-    y = 6
+    x = 9
+    y = 2
     cost = 10
 
     available = {original_tag = PEK}
@@ -773,8 +759,8 @@ focus_tree = {
  focus = {
     id = PEK_intensify_gun_training
     icon = GFX_goal_generic_navy
-    x = 12
-    y = 16
+    x = 9
+    y = 3
     cost = 10
 
     available = {original_tag = PEK}
@@ -787,8 +773,8 @@ focus_tree = {
  focus = {
     id = PEK_better_materials
     icon = GFX_goal_generic_navy
-    x = 11
-    y = 7
+    x = 10
+    y = 3
     cost = 14
 
     available = {original_tag = PEK}
@@ -801,8 +787,8 @@ focus_tree = {
  focus = {
     id = PEK_submarines_expansions
     icon = GFX_goal_generic_navy
-    x = 13
-    y = 8
+    x = 9
+    y = 4
     cost = 5
 
     available = {original_tag = PEK}
@@ -821,8 +807,8 @@ focus_tree = {
  focus = {
     id = PEK_capital_ships_buildup
     icon = GFX_goal_generic_navy
-    x = 11
-    y = 8
+    x = 10
+    y = 4
     cost = 20
 
     available = {original_tag = PEK}
@@ -854,8 +840,8 @@ focus_tree = {
  focus = {
     id = PEK_screens_buildup
     icon = GFX_goal_generic_navy
-    x = 12
-    y = 8
+    x = 10
+    y = 5
     cost = 5
 
     available = {original_tag = PEK}

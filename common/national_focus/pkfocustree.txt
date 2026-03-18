@@ -700,9 +700,44 @@ focus_tree = {
         ahead_reduction = 2
         category = light_tank_chassis
       }
-      add_ideas = PEK_fast_steel_things
     }
  }
+
+ focus = {
+    id = PEK_better_armor_but_less_speed
+    icon = GFX_goal_generic_army_tanks
+    x = 124
+    y = 124
+
+    available = {original_tag}
+    prerequisite = {focus = PEK_build_the_army}
+
+    completion_reward = {
+        add_tech_bonus = {
+            name = medium_tank
+            uses = 3
+            ahead_reduction = 2
+            category = medium_tank_chassis
+        }
+    }
+ }
+ 
+ focus = {
+    id = PEK_better_material_quality
+    icon = GFX_goal_generic_army_tanks
+    x = 123
+    y = 123
+
+    available = {
+        original_tag = PEK
+    }
+    prerequisite = {focus = xxxx}
+
+    completion_reward = {
+        add_ideas = PEK_steel_driving_things_materials_quality
+    }
+ }
+
 
  focus = {
     id = PEK_great_steel_driving_logistics

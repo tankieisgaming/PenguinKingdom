@@ -742,13 +742,13 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_almost_unkillable_but_speed_is_zero
+    id = PEK_almost_unkillable_but_speed_is_almost_zero
     icon = GFX_goal_generic_army_tanks
     x = 21345
     y = 219480
 
     available = {original_tag = PEK}
-    prerequisite = {focus = PEK_great_armor_but_very_very_slow}
+    prerequisite = {focus = PEK_great_armor_but_very_slow}
 
     completion_reward = {
         add_tech_bonus ={

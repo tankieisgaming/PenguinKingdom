@@ -110,7 +110,7 @@ ideas = {
    
 
    modifier = {
-     dig_in_speed_factor = 0.05
+    dig_in_speed_factor = 0.05
 	max_dig_in_factor = 0.1
 	training_time_factor = -0.1
 	mobilization_speed = 0.1
@@ -132,6 +132,9 @@ ideas = {
 	initiative_factor = 0.02
    }
    }
+   
+   
+   
    PEK_steel_driving_things_logistics = {
     picture = GFX_goal_generic_army_tanks
 
@@ -141,6 +144,7 @@ ideas = {
 
     modifier = {
         supply_consumption_factor = -0.9
+        terrain_penalty_reduction = -0.75
     }
    }
    

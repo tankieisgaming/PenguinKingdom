@@ -684,6 +684,27 @@ focus_tree = {
  }
  
  focus = {
+    id = PEK_technology_for_steel_driving_things_who_are_fast
+    icon = GFX_goal_generic_army_tanks
+    x = 11
+    y = 7
+    cost = 10
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_build_the_army}
+
+    completion_reward = {
+      add_tech_bonus = {
+        name = light_tank
+        uses = 3
+        ahead_reduction = 2
+        category = light_tank_chassis
+      }
+      add_ideas = PEK_fast_steel_things
+    }
+ }
+
+ focus = {
     id = PEK_great_steel_driving_logistics
     icon = GFX_goal_generic_army_tanks
     x = 7

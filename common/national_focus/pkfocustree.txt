@@ -35,7 +35,7 @@ focus_tree = {
 
 
  focus = {
-    id = ARG_the_start_of_the_nation
+    id = PEK_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
      x = 0
      y = 0

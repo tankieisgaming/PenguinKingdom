@@ -791,7 +791,10 @@ focus_tree = {
         add_ideas = PEK_steel_driving_things_logistics
     }
  }
-
+ 
+ focus = {
+    id = PEK_
+ }
 
  #  #    #    #   #  #   #
  ## #   # #   #   #   # #

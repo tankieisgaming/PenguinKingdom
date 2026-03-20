@@ -18,7 +18,6 @@ focus_tree = {
 
 
 
-
  focus = {
     id = PEK_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
@@ -710,7 +709,7 @@ focus_tree = {
     y = 124
     cost = 5
    
-    available = {original_tag}
+    available = {original_tag = PEK}
    
     prerequisite = {focus = PEK_build_the_army}
 

@@ -13,6 +13,7 @@ state = {
 	history = {
 
 		owner = PEK
+		controller = PEK
 		add_core_of = PEK
 		add_claim_by = PEK
 

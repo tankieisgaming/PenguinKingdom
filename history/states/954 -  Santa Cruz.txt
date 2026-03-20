@@ -12,6 +12,7 @@ state = {
 	history = {
 
 		owner = PEK
+		controller = PEK
 		add_core_of = PEK
 		add_claim_by = PEK
 
@@ -29,7 +30,7 @@ state = {
 	}
 
 	provinces = {
-		5173 12946 12952 13305
+		2169 5173 12946 12952 13305
 	}
 
 	local_supplies = 10.0 

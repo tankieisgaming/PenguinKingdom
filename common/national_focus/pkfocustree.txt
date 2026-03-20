@@ -101,7 +101,6 @@ focus_tree = {
  focus = {
     id = PEK_we_need_some_roads
     icon = GFX_goal_generic_construct_infrastructure
-    mutually_exclusive = {PEK_build_up_the_countryside}
     x = 3
     y = 3
     cost = 7

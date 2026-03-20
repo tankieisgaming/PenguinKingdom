@@ -101,10 +101,11 @@ focus_tree = {
  focus = {
     id = PEK_we_need_some_roads
     icon = GFX_goal_generic_construct_infrastructure
-    x = 3
-    y = 3
     cost = 7
     mutually_exclusive = {focus = PEK_build_up_the_countryside}
+    
+    x = 3
+    y = 3
 
     available = {
         original_tag = PEK

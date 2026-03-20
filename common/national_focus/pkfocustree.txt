@@ -104,9 +104,9 @@ focus_tree = {
     mutually_exclusive = {PEK_build_up_the_countryside}
     x = 3
     y = 3
-    
     cost = 7
-    
+    mutually_exclusive = {focus = PEK_build_up_the_countryside}
+
     available = {
         original_tag = PEK
     }

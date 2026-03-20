@@ -283,8 +283,6 @@ focus_tree = {
  ####        #   #
 
 
-
-
  focus = {
     id = PEK_claim_chile
     icon = GFX_goal_generic_territory_or_war
@@ -292,7 +290,7 @@ focus_tree = {
     y = 1
     cost = 9
 
-    prerequisite = { focus = PEK_focus_1}
+    prerequisite = { PEK_the_start_of_the_nation}
     available = {
         tag = PEK
         CHI = { exists = yes }
@@ -796,9 +794,6 @@ focus_tree = {
     }
  }
  
- focus = {
-    id = PEK_
- }
 
  #  #    #    #   #  #   #
  ## #   # #   #   #   # #
@@ -971,7 +966,7 @@ focus_tree = {
  
 
  focus = {
-    id = ARG_start_the_air
+    id = PEK_start_the_air
     icon = GFX_goal_generic_construct_mil_factory
     x = 11
     y = 1

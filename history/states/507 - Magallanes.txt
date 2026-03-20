@@ -14,12 +14,11 @@ state = {
 		owner = PEK
 		add_core_of = PEK
 		add_claim_by = PEK
-		add_core_of = PEK
 
 		buildings = {
 			infrastructure = 4
 			5215 = {
-				naval_base = 0
+				naval_base = 1
 			}
 		}
 

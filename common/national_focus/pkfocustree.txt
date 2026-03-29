@@ -695,7 +695,7 @@ focus_tree = {
         name = light_tank
         uses = 3
         ahead_reduction = 2
-        category = light_tank_chassis
+        category = cat_light_armor
       }
     }
  }
@@ -716,7 +716,7 @@ focus_tree = {
             name = medium_tank
             uses = 3
             ahead_reduction = 2
-            category = medium_tank_chassis
+            category = cat_medium_armor
         }
     }
  }
@@ -736,7 +736,7 @@ focus_tree = {
             name = heavy_tank
             uses = 3 
             ahead_reduction = 2
-            category = heavy_tank_chassis
+            category = cat_heavy_armor
         }
     }
  }
@@ -756,7 +756,7 @@ focus_tree = {
             name = super_heavy_tank
             uses = 1
             ahead_reduction = 4
-            category = super_heavy_tank_chassis
+            category = cat_super_heavy_armor
         }
     }
  }

@@ -1079,7 +1079,7 @@ focus_tree = {
             name = aiframe_aot_bonus
             uses = 3
             ahead_reduction = 2
-            category = small_plane_airframe
+            category = small_air
         }
         air_experience = 35
     }
@@ -1200,7 +1200,6 @@ focus_tree = {
 
     available = {
         original_tag = PEK
-        has_completed_special_project = nuclear_bomb
     }
 
     completion_reward = {

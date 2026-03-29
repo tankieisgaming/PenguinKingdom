@@ -290,7 +290,7 @@ focus_tree = {
     y = 1
     cost = 9
 
-    prerequisite = { PEK_the_start_of_the_nation}
+    prerequisite = { focus = PEK_the_start_of_the_nation}
     available = {
         tag = PEK
         CHI = { exists = yes }

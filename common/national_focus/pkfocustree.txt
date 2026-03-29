@@ -740,26 +740,6 @@ focus_tree = {
         }
     }
  }
-
- focus = {
-    id = PEK_almost_unkillable_but_speed_is_almost_zero
-    icon = GFX_goal_generic_army_tanks
-    x = 21345
-    y = 219480
-    cost = 5
-
-    available = {original_tag = PEK}
-    prerequisite = {focus = PEK_great_armor_but_very_slow}
-
-    completion_reward = {
-        add_tech_bonus ={
-            name = super_heavy_tank
-            uses = 1
-            ahead_reduction = 4
-            category = cat_super_heavy_armor
-        }
-    }
- }
  
  focus = {
     id = PEK_better_material_quality

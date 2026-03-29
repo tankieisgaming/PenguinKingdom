@@ -751,7 +751,7 @@ focus_tree = {
     available = {
         original_tag = PEK
     }
-    prerequisite = {focus = PEK_almost_unkillable_but_speed_is_almost_zero}
+    prerequisite = {focus = PEK_great_armor_but_very_slow}
 
     completion_reward = {
         add_ideas = PEK_steel_driving_things_materials_quality

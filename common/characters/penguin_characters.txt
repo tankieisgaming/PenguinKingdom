@@ -22,9 +22,10 @@ characters = {
 PEK_kowalski = {
   name = "Admiral Kowalski"
   portraits = {
-   navy = { texturefile = "gfx/leaders/PEK/PEK_kowalski.dds" }
+   navy = { 
+    large="GFX_portrait_PEK_kowalski_large"
+    }
   }
-
   corps_commander = {
     traits = {
    carreer_officer

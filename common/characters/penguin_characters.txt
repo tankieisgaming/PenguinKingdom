@@ -20,8 +20,6 @@ characters = {
   }
  }
 
-}
-
 PEK_skipper = {
   name = "Admiral Kowalski"
   portraits = {
@@ -76,3 +74,4 @@ enthusiastic
 rookie 
 winter_specialist }
  }
+}

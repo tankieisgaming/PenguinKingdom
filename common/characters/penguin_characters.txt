@@ -20,7 +20,7 @@ characters = {
   }
  }
 
-PEK_skipper = {
+PEK_kowalski = {
   name = "Admiral Kowalski"
   portraits = {
    navy = { texturefile = "gfx/leaders/PEK/PEK_kowalski.dds" }

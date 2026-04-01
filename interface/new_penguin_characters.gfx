@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+    name = "GFX_portrait_PEK_kowalski_large"
+    texturefile = "gfx/leaders/PEK/kowalski.dds"
+    }
+}

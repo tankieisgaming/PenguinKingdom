@@ -3,7 +3,9 @@ characters = {
  PEK_skipper = {
   name = "General Skipper"
   portraits = {
-   army = { texturefile = "gfx/leaders/PEK/PEK_skipper.dds" }
+   army = { 
+    large="GFX_portrait_PEK_skipper_large"
+    }
   }
 
   corps_commander = {

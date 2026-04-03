@@ -6,12 +6,6 @@ set_technology = {
 	infantry_weapons = 1
 }
 
-recruit_character = PEK_rico
-recruit_character = PEK_private
-recruit_character = PEK_skipper
-recruit_character = PEK_kowalski
-
-
 
 set_convoys = 20
 

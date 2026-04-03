@@ -273,7 +273,7 @@ HES = "countries/Hesse.txt"
 RHI = "countries/Rhineland.txt"
 UBD = "countries/United Baltic Duchy.txt"
 KOS	= "countries/Kosovo.txt"
-PEK = "countries/PinguinKindom.txt"
+PEK = "countries/PinguinKingdom.txt"
 
 # REICHSKOMMISSARIATS (no cores) (European)
 RKB = "countries/Reichskommisariat Belgien.txt"

@@ -1556,7 +1556,7 @@ focus_tree = {
  focus = {
     id = PEK_putting_weapons_on_planes
     icon = GFX_goal_generic_air_fighter
-    x = 21
+    x = 19
     y = 3
     cost = 5
 
@@ -1583,7 +1583,7 @@ focus_tree = {
  focus = {
  id = PEK_cannons_on_planes
  icon = GFX_goal_generic_air
- x = 21
+ x = 19
  y = 4
  cost = 5
 

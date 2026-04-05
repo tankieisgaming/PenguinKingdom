@@ -318,8 +318,8 @@ focus_tree = {
  focus = {
     id = PEK_rally_tha_chilean_penguins
     icon = GFX_compliance_icon
-    x = 4
-    y = 5
+    x = 0
+    y = 1
     cost = 10
 
     available = {
@@ -380,7 +380,7 @@ focus_tree = {
  focus = {
     id = PEK_rally_tha_argentinian_penguins
     icon = GFX_compliance_icon
-    x = 4
+    x = 0
     y = 4
     cost = 10
 
@@ -449,8 +449,8 @@ focus_tree = {
  focus = {
     id = PEK_rally_tha_peruvian_penguins
     icon = GFX_compliance_icon
-    x = 4
-    y = 5
+    x = 0
+    y = 7
     cost = 10
 
     available = {
@@ -520,8 +520,8 @@ focus_tree = {
   focus = {
     id = PEK_rally_tha_south_african_penguins
     icon = GFX_compliance_icon
-    x = 4
-    y = 5
+    x = 0
+    y = 10
     cost = 10
 
     available = {
@@ -593,8 +593,8 @@ focus_tree = {
   focus = {
     id = PEK_rally_tha_australian_penguins
     icon = GFX_compliance_icon
-    x = 2
-    y = 6
+    x = 0
+    y = 13
     cost = 10
 
     available = {
@@ -660,8 +660,8 @@ focus_tree = {
  focus = {
     id = PEK_rally_tha_new_zealanders_penguins
     icon = GFX_compliance_icon
-    x = 4
-    y = 5
+    x = 0
+    y = 16
     cost = 10
 
     available = {

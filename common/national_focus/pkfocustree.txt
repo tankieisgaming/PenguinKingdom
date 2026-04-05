@@ -316,39 +316,33 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_integrate_chile
-    icon = GFX_goal_generic_propaganda
-    x = -1
-    y = 2
+    id = PEK_rally_tha_chilean_penguins
+    icon = GFX_compliance_icon
+    x = 4
+    y = 5
     cost = 10
 
-    prerequisite = { focus = PEK_claim_chile }
-
     available = {
-        tag = PEK
-        CHI = { exists = no }
+        original_tag = PEK
+        has_full_control_of_state = 950
+        has_full_control_of_state = 279
+        has_full_control_of_state = 952
+        has_full_control_of_state = 506
+        has_full_control_of_state = 951
     }
+    prerequisite = {focus = PEK_claim_chile}
+
 
     completion_reward = {
-
-        every_owned_state = {
-            limit = {
-                is_core_of = CHI
-            }
-            add_core_of = PEK
-            add_resistance = -25
+       every_state = {
+        limit = {
+            is_core_of = CHL
         }
-
-   
-        add_stability = 0.1
-
-        add_political_power = 50
+    set_compliance = 0.5
+      }
     }
-
-    ai_will_do = {
-        factor = 1.5
     }
- }
+ 
 
 
 
@@ -383,6 +377,39 @@ focus_tree = {
     }
  }
 
+ focus = {
+    id = PEK_rally_tha_argentinian_penguins
+    icon = GFX_compliance_icon
+    x = 4
+    y = 5
+    cost = 10
+
+    available = {
+        original_tag = PEK
+        has_full_control_of_state = 955
+        has_full_control_of_state = 512
+        has_full_control_of_state = 278
+        has_full_control_of_state = 956
+        has_full_control_of_state = 510
+        has_full_control_of_state = 511
+        has_full_control_of_state = 960
+        has_full_control_of_state = 508
+        has_full_control_of_state = 959
+        has_full_control_of_state = 957
+    }
+    prerequisite = {focus = PEK_claim_argentina}
+
+
+    completion_reward = {
+       every_state = {
+        limit = {
+            is_core_of = ARG
+        }
+    set_compliance = 0.5
+      }
+    }
+    }
+ 
 
  focus = {
     id = PEK_invade_peru
@@ -417,77 +444,36 @@ focus_tree = {
  }
 
 
+ 
+
  focus = {
-    id = PEK_integrate_peru_coast
-    icon = GFX_goal_generic_propaganda
-    x = -1
+    id = PEK_rally_tha_peruvian_penguins
+    icon = GFX_compliance_icon
+    x = 4
     y = 5
     cost = 10
 
-    prerequisite = { focus = PEK_invade_peru }
-
     available = {
-        tag = PEK
-        PRU = { exists = no }
+        original_tag = PEK
+        has_full_control_of_state = 947
+        has_full_control_of_state = 492
+        has_full_control_of_state = 494
+        has_full_control_of_state = 303
+        has_full_control_of_state = 491
     }
+    prerequisite = {focus = PEK_invade_peru}
+
 
     completion_reward = {
-
-        # Tumbes
-        if = {
-            limit = { owns_state = 493 }
-            493 = {
-                add_core_of = PEK
-                add_resistance = -25
-            }
+       every_state = {
+        limit = {
+            is_core_of = PRU
         }
-
-        # Piura
-        if = {
-            limit = { owns_state = 492 }
-            492 = {
-                add_core_of = PEK
-                add_resistance = -25
-            }
-        }
-
-        # Lima
-        if = {
-            limit = { owns_state = 495 }
-            495 = {
-                add_core_of = PEK
-                add_resistance = -25
-            }
-        }
-
-        # Ica
-        if = {
-            limit = { owns_state = 496 }
-            496 = {
-                add_core_of = PEK
-                add_resistance = -25
-            }
-        }
-
-        # Arequipa (zuidkust)
-        if = {
-            limit = { owns_state = 497 }
-            497 = {
-                add_core_of = PEK
-                add_resistance = -25
-            }
-        }
-
-        add_stability = 0.1
-        add_political_power = 75
-    }
-
-    ai_will_do = {
-        factor = 1.3
+    set_compliance = 0.5
+      }
     }
  }
-
-
+ 
 
 
 
@@ -531,6 +517,37 @@ focus_tree = {
     }
  }
 
+  focus = {
+    id = PEK_rally_tha_south_african_penguins
+    icon = GFX_compliance_icon
+    x = 4
+    y = 5
+    cost = 10
+
+    available = {
+        original_tag = PEK
+        has_full_control_of_state = 719
+        has_full_control_of_state = 681
+        has_full_control_of_state = 275
+        has_full_control_of_state = 893
+        has_full_control_of_state = 541 
+        has_full_control_of_state = 895
+        has_full_control_of_state = 894
+    }
+    prerequisite = {focus = PEK_claim_namibia_southafrica}
+
+
+    completion_reward = {
+       every_state = {
+        limit = {
+            is_core_of = SAF
+        }
+    set_compliance = 0.5
+      }
+    }
+    }
+ 
+
 
 
    #    ####  #  ####
@@ -573,6 +590,40 @@ focus_tree = {
     }
  }
 
+  focus = {
+    id = PEK_rally_tha_australian_penguins
+    icon = GFX_compliance_icon
+    x = 2
+    y = 6
+    cost = 10
+
+    available = {
+        original_tag = PEK
+        has_full_control_of_state = 285
+        has_full_control_of_state = 517
+        has_full_control_of_state = 518
+        has_full_control_of_state = 519
+        has_full_control_of_state = 871
+        has_full_control_of_state = 522
+        has_full_control_of_state = 870
+        has_full_control_of_state = 520
+        has_full_control_of_state = 872
+        has_full_control_of_state = 521
+
+    }
+    prerequisite = {focus = PEK_claim_australia}
+
+
+    completion_reward = {
+    every_state = {
+        limit = {
+            is_core_of = AST
+        }
+    set_compliance = 0.5
+      }
+    }
+ }
+
 
  focus = {
     id = PEK_claim_new_zealand
@@ -607,7 +658,7 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_rally_tha_penguins
+    id = PEK_rally_tha_new_zealanders_penguins
     icon = GFX_compliance_icon
     x = 4
     y = 5
@@ -622,10 +673,15 @@ focus_tree = {
 
 
     completion_reward = {
-        add_compliance = 0.25
-        add_resistance = -0.05
+       every_state = {
+        limit = {
+            is_core_of = NZL
+        }
+    set_compliance = 0.5
+      }
     }
- }
+    }
+ 
 
 
 

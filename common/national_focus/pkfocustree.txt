@@ -1,6 +1,4 @@
-focus_tree = {
- 
- continuous_focus_position = { x = 50 y = 1000 } 
+focus_tree = { 
  
  id = penguin_kingdom_focus
 
@@ -12,6 +10,8 @@ focus_tree = {
  tag = PEK
  }
  }
+
+ continuous_focus_position = { x=7000 y = 1300 }
 
   ##   ##   #   #
  #    #  #  #  #
@@ -25,7 +25,7 @@ focus_tree = {
     id = PEK_the_start_of_the_nation
     icon = GFX_goal_generic_political_reform
      x = 0
-     y = 0
+     y = -1
      cost = 5
 
     available = {
@@ -292,7 +292,7 @@ focus_tree = {
     id = PEK_claim_chile
     icon = GFX_goal_generic_territory_or_war
     x = -1
-    y = 1
+    y = 0
     cost = 9
 
     prerequisite = { focus = PEK_the_start_of_the_nation}
@@ -353,7 +353,7 @@ focus_tree = {
     y = 3
     cost = 6
 
-    prerequisite = { focus = PEK_integrate_chile }
+    prerequisite = { focus = PEK_claim_chile }
 
     available = {
         tag = PEK
@@ -381,7 +381,7 @@ focus_tree = {
     id = PEK_rally_tha_argentinian_penguins
     icon = GFX_compliance_icon
     x = 4
-    y = 5
+    y = 4
     cost = 10
 
     available = {
@@ -415,7 +415,7 @@ focus_tree = {
     id = PEK_invade_peru
     icon = GFX_goal_generic_major_war
     x = -1
-    y = 4
+    y = 6
     cost = 10
 
     prerequisite = { focus = PEK_claim_argentina }
@@ -489,11 +489,11 @@ focus_tree = {
  focus = {
     id = PEK_claim_namibia_southafrica
     icon = GFX_goal_generic_major_war
-    x = 1
-    y = 6
+    x = -1
+    y = 9
     cost = 10
 
-    prerequisite = { focus = PEK_integrate_peru_coast } 
+    prerequisite = { focus = PEK_invade_peru } 
 
     available = {
         tag = PEK
@@ -561,8 +561,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_australia
     icon = GFX_goal_generic_major_war
-    x = 0
-    y = 6
+    x = -1
+    y = 12
     cost = 4
 
     prerequisite = { focus = PEK_claim_namibia_southafrica } 
@@ -628,8 +628,8 @@ focus_tree = {
  focus = {
     id = PEK_claim_new_zealand
     icon = GFX_goal_generic_major_war
-    x = 0
-    y = 7
+    x = -1
+    y = 15
     cost = 5
 
     prerequisite = { focus = PEK_claim_australia }

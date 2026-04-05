@@ -342,8 +342,47 @@ focus_tree = {
       }
     }
     }
- 
 
+    focus = {
+    id = PEK_integrate_tha_chilean_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 14
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            950 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			279 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+            952 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            506 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            951 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = CHL
+            }
+            add_core_of = PEK
+        }
+    }
+  }
 
 
  focus = {
@@ -409,6 +448,67 @@ focus_tree = {
       }
     }
     }
+
+    focus = {
+    id = PEK_integrate_tha_argentinian_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 14
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            955 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			512 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+            278 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            956 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            510 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            511 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            960 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            508 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            959 = {
+                is_controlled_by = PEK
+                compliance > 80 
+            }
+            957 = {
+                is_controlled_by = PEK
+                compliance >80
+            }
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = ARG
+            }
+            add_core_of = PEK
+        }
+    }
+  }
  
 
  focus = {
@@ -474,6 +574,46 @@ focus_tree = {
     }
  }
  
+ focus = {
+    id = PEK_integrate_tha_peruvian_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 14
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            947 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			492 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+            494 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            303 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            491 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = PRU
+            }
+            add_core_of = PEK
+        }
+    }
+  }
 
 
 
@@ -546,6 +686,55 @@ focus_tree = {
       }
     }
     }
+
+    focus = {
+    id = PEK_integrate_tha_south_african_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 14
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            719 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			681 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+            275 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            893 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            541 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            895 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            894 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = SAF
+            }
+            add_core_of = PEK
+        }
+    }
+  }
  
 
 
@@ -624,6 +813,66 @@ focus_tree = {
     }
  }
 
+  focus = {
+    id = PEK_integrate_tha_australian_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 14
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            285 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			517 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+            518 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            519 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            871 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            522 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            870 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            520 = {
+                is_controlled_by = PEK
+                compliance > 80
+            }
+            872 = {
+                is_controlled_by = PEK
+                compliance > 80 
+            }
+            521 = {
+                is_controlled_by = PEK
+                compliance >80
+            }
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = AST
+            }
+            add_core_of = PEK
+        }
+    }
+  }
 
  focus = {
     id = PEK_claim_new_zealand

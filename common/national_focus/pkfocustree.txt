@@ -685,7 +685,7 @@ focus_tree = {
     icon = GFX_goal_generic_army
     x = 7
     y = 8
-    cost= = 10
+    cost = 10
 
     available = {original_tag = PEK}
     prerequisite = {focus = PEK_mobilize_the_walking_birds}

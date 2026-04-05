@@ -21,7 +21,7 @@ ideas = {
 
             modifier = {
                 industrial_capacity_factory = -0.5 
-                consumer_goods_factor = 15
+                consumer_goods_factor = 0.75
             }
         }
     

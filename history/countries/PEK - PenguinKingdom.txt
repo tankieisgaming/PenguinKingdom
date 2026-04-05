@@ -1,5 +1,6 @@
 ﻿capital = 953
 
+set_research_slots = 3
 
 # Starting tech
 set_technology = {
@@ -8,7 +9,7 @@ set_technology = {
 
 # Starting ideas
 
-load_ideas = {
+add_ideas = {
 	PEK_what_are_factories
 	PEK_thumbless_hands
 	PEK_scattered_pinguins

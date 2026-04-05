@@ -606,6 +606,22 @@ focus_tree = {
     }
  }
 
+ focus = {
+    id = PEK_rally_tha_penguins
+    icon = GFX_compliance_icon
+    x = 4
+    y = 5
+    cost = 10
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_claim_new_zealand}
+
+    completion_reward = {
+        add_compliance = 0.25
+        add_resistance = -0.05
+    }
+ }
+
 
 
    #    ###   ##   ##  #   #

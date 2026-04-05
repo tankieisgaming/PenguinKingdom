@@ -681,7 +681,35 @@ focus_tree = {
       }
     }
     }
- 
+  
+  focus = {
+    id = PEK_integrate_tha_new_zealanders_penguins
+    icon = GFX_compliance_icon 
+    x = 0
+    y = 17
+    cost = 10
+
+    available = {
+        original_tag = PEK
+            284 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+			723 = {
+				is_controlled_by = PEK
+				compliance > 80
+			}
+    }
+
+    completion_reward = {
+        every_state = {
+            limit = {
+                is_core_of = NZL
+            }
+            add_core_of = PEK
+        }
+    }
+  }
 
 
 

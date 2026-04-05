@@ -613,8 +613,13 @@ focus_tree = {
     y = 5
     cost = 10
 
-    available = {original_tag = PEK}
+    available = {
+        original_tag = PEK
+        has_full_control_of_state = 284
+        has_full_control_of_state = 723
+    }
     prerequisite = {focus = PEK_claim_new_zealand}
+
 
     completion_reward = {
         add_compliance = 0.25

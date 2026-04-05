@@ -18,7 +18,7 @@ state = {
 		add_claim_by = PEK
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 3
 			13300 = {
 				naval_base = 1
 			}

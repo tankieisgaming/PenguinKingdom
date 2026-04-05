@@ -1,7 +1,7 @@
 state = {
 	id = 949
 	name = "STATE_949"
-	manpower = 34389
+	manpower = 343890
 	state_category = pastoral
 	
 	resources = {
@@ -17,7 +17,7 @@ state = {
 		add_claim_by = PEK
 
 		buildings = {
-			infrastructure = 4
+			infrastructure = 1
 		    
 			}
 		

@@ -1,4 +1,7 @@
 focus_tree = {
+ 
+ continuous_focus_position = { x = 50 y = 1000 } 
+ 
  id = penguin_kingdom_focus
 
  country = {
@@ -53,12 +56,13 @@ focus_tree = {
     icon = GFX_goal_generic_construct_civ_factory
     cost = 7
 
-    x = 0
+    x = 4
     y = 1
     available = {
         original_tag = PEK
     }
-
+    prerequisite = {focus = PEK_the_start_of_the_nation}
+	 
     completion_reward = {
       random_owned_controlled_state = {
         add_building_construction = {
@@ -76,13 +80,14 @@ focus_tree = {
     icon = GFX_goal_generic_construct_civ_factory
     cost = 5
 
-    x = 1
+    x = 4
     y = 2
 
     available = {
         original_tag = PEK
     }
-
+    prerequisite = {focus = PEK_rebuilding_the_nation}
+	
     completion_reward = {
        random_owned_controlled_state = {
         add_building_construction = {
@@ -104,7 +109,7 @@ focus_tree = {
     mutually_exclusive = {focus = PEK_build_up_the_countryside}
     
     x = 3
-    y = 3
+    y = 4
 
     available = {
         original_tag = PEK
@@ -125,7 +130,7 @@ focus_tree = {
     id = PEK_capital_industrial_push
     icon = GFX_goal_generic_industry
     x = 3
-    y = 4
+    y = 3
    
     cost = 5
    
@@ -611,7 +616,7 @@ focus_tree = {
  focus = {
     id = PEK_make_a_military
     icon = GFX_goal_generic_political_reform
-    x = 12
+    x = 14
     y = 0
     cost = 5
 
@@ -643,7 +648,7 @@ focus_tree = {
  focus = {
     id = PEK_build_the_army
     icon = GFX_goal_generic_small_arms
-    x = 8
+    x = 10
     y = 1
     cost = 4
 
@@ -668,7 +673,7 @@ focus_tree = {
  focus = {
     id = PEK_mobilize_the_walking_birds
     icon = GFX_goal_generic_army
-    x = 7
+    x = 9
     y = 2
     cost = 10
 
@@ -683,7 +688,7 @@ focus_tree = {
  focus = {
     id = PEK_training_camps
     icon = GFX_goal_generic_army
-    x = 7
+    x = 9
     y = 3
     cost = 10
 
@@ -701,7 +706,7 @@ focus_tree = {
  focus = {
     id = PEK_terraforming_in_the_military
     icon = GFX_goal_generic_army 
-    x = 7
+    x = 9
     y = 4
     cost = 10
 
@@ -719,7 +724,7 @@ focus_tree = {
  focus = {
     id = PEK_use_enemy_guns
     icon = GFX_goal_generic_army
-    x = 7
+    x = 9
     y = 5
     cost = 10
 
@@ -737,7 +742,7 @@ focus_tree = {
  focus = {
     id = PEK_now_we_have_good_army
     icon = GFX_goal_generic_army
-    x = 8
+    x = 10
     y = 7
     cost = 10
 
@@ -757,7 +762,7 @@ focus_tree = {
  focus = {
     id = PEK_technology_for_steel_driving_things_who_are_fast
     icon = GFX_goal_generic_army_tanks
-    x = 9
+    x = 11
     y = 2
     cost = 10
 
@@ -777,7 +782,7 @@ focus_tree = {
  focus = {
     id = PEK_better_armor_but_less_speed
     icon = GFX_goal_generic_army_tanks
-    x = 9
+    x = 11
     y = 3
     cost = 5
    
@@ -797,7 +802,7 @@ focus_tree = {
  focus = {
     id = PEK_great_armor_but_very_slow
     icon = GFX_goal_generic_army_tanks
-    x = 9
+    x = 11
     y = 4
     cost = 5
 
@@ -817,7 +822,7 @@ focus_tree = {
  focus = {
     id = PEK_better_material_quality
     icon = GFX_goal_generic_army_tanks
-    x = 9
+    x = 11
     y = 5
     cost = 5
 
@@ -835,7 +840,7 @@ focus_tree = {
  focus = {
     id = PEK_great_steel_driving_logistics
     icon = GFX_goal_generic_army_tanks
-    x = 9
+    x = 11
     y = 6
     cost = 5
     
@@ -850,7 +855,7 @@ focus_tree = {
  focus = {
     id = PEK_dynamic_army_fighting_terrain
     icon = GFX_goal_generic_army
-    x = 7
+    x = 9
     y = 6
 	cost = 10
 
@@ -872,7 +877,7 @@ focus_tree = {
  focus = {
     id = PEK_start_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
-    x = 12
+    x = 14
     y = 1
     cost = 6
 
@@ -899,7 +904,7 @@ focus_tree = {
  focus = {
     id = PEK_expand_the_navy
     icon = GFX_goal_generic_construct_naval_dockyard
-    x = 13
+    x = 15
     y = 2
     cost = 10
 
@@ -923,7 +928,7 @@ focus_tree = {
  focus = {
     id = PEK_improve_ship_engines
     icon = GFX_goal_generic_navy
-    x = 11
+    x = 13
     y = 2
     cost = 10
 
@@ -941,7 +946,7 @@ focus_tree = {
  focus = {
     id = PEK_real_battle_training
     icon = GFX_goal_generic_navy
-    x = 11
+    x = 13
     y = 3
     cost = 10
 
@@ -959,7 +964,7 @@ focus_tree = {
  focus = {
     id = PEK_our_great_navy
     icon = GFX_goal_generic_navy
-    x = 12
+    x = 14
     y = 6
     cost = 10
 
@@ -975,7 +980,7 @@ focus_tree = {
  focus = {
     id = PEK_better_materials_little_ships
     icon = GFX_goal_generic_navy
-    x = 11
+    x = 13
     y = 4
     cost = 14
 
@@ -990,7 +995,7 @@ focus_tree = {
  focus = {
     id = PEK_better_materials_capital_ships
     icon = GFX_goal_generic_navy
-    x = 11
+    x = 13
     y = 5
     cost = 14
 
@@ -1005,7 +1010,7 @@ focus_tree = {
  focus = {
     id = PEK_submarines_expansions
     icon = GFX_goal_generic_navy
-    x = 13
+    x = 15
     y = 3
     cost = 5
 
@@ -1026,7 +1031,7 @@ focus_tree = {
  focus = {
     id = PEK_capital_ships_buildup
     icon = GFX_goal_generic_navy
-    x = 13
+    x = 15
     y = 5
     cost = 20
 
@@ -1060,7 +1065,7 @@ focus_tree = {
  focus = {
     id = PEK_screens_buildup
     icon = GFX_goal_generic_navy
-    x = 13
+    x = 15
     y = 4
     cost = 5
 
@@ -1093,7 +1098,7 @@ focus_tree = {
  focus = {
     id = PEK_start_the_air
     icon = GFX_goal_generic_construct_mil_factory
-    x = 16
+    x = 18
     y = 1
     cost = 5
 
@@ -1118,7 +1123,7 @@ focus_tree = {
  focus = {
     id = PEK_extend_pilot_training
     icon = GFX_goal_generic_pilot_training
-    x = 17
+    x = 19
     y = 2
     cost = 5
 
@@ -1139,7 +1144,7 @@ focus_tree = {
  focus = {
     id = PEK_increase_production_of_air
     icon = GFX_goal_generic_construct_mil_factory
-    x = 15
+    x = 17
     y = 2
     cost = 7
 
@@ -1167,7 +1172,7 @@ focus_tree = {
  focus = {
     id =  Expand_air_bases
     icon = GFX_goal_generic_construct_air_base
-    x = 15
+    x = 17
     y = 3
     cost = 2
 
@@ -1191,7 +1196,7 @@ focus_tree = {
  focus = {
     id = PEK_putting_weapons_on_planes
     icon = GFX_goal_generic_air_fighter
-    x = 19
+    x = 21
     y = 3
     cost = 5
 
@@ -1218,7 +1223,7 @@ focus_tree = {
  focus = {
  id = PEK_cannons_on_planes
  icon = GFX_goal_generic_air
- x = 19
+ x = 21
  y = 4
  cost = 5
 
@@ -1238,7 +1243,7 @@ focus_tree = {
  focus = {
     id = PEK_spy_planes
     icon = GFX_goal_generic_air
-    x = 17
+    x = 21
     y = 3
     cost = 3
 
@@ -1257,7 +1262,7 @@ focus_tree = {
  focus = {
     id = PEK_putting_bombs_on_tactical_planes
     icon = GFX_goal_generic_air 
-    x = 17
+    x = 21
     y = 4
     cost = 5
 
@@ -1283,7 +1288,7 @@ focus_tree = {
  focus = {
     id = PEK_bigger_bombs_on_bigger_planes
     icon = GFX_goal_generic_air
-    x = 18
+    x = 20
     y = 6
     cost = 5
 
@@ -1316,7 +1321,7 @@ focus_tree = {
  focus = {
     id = PEK_nuclear_research
     icon = GFX_goal_generic_construct_nuclear_reactor
-    x = 12
+    x = 14
     y = 9
     cost = 10
 
@@ -1346,7 +1351,7 @@ focus_tree = {
  focus = {
     id = PEK_secret_underground_stash
     icon = GFX_goal_generic_construct_nuclear_reactor
-    x = 12
+    x = 14
     y = 10
     cost = 15
 

@@ -666,17 +666,89 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_winter_army
+    id = PEK_mobilize_the_walking_birds
     icon = GFX_goal_generic_army
     x = 7
     y = 2
-    cost = 5
+    cost = 10
 
     available = {original_tag = PEK}
     prerequisite = {focus = PEK_build_the_army}
 
     completion_reward = {
-        add_ideas = PEK_pinguin_winter_army
+        add_ideas = PEK_mobilize_more_penguin
+    }
+ }
+
+ focus = {
+    id = PEK_training_camps
+    icon = GFX_goal_generic_army
+    x = 7
+    y = 8
+    cost= = 10
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_mobilize_the_walking_birds}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_mobilize_the_walking_birds
+            add_idea = PEK_train_army_better 
+        }
+    }
+ }
+
+ focus = {
+    id = PEK_terraforming_in_the_military
+    icon = GFX_goal_generic_army 
+    x = 7
+    y = 3
+    cost = 10
+
+    available = {original_tag = PEK}\
+    prerequisite = {focus = PEK_training_camps}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_train_army_better
+            add_idea = PEK_learn_to_use_shovels
+        }
+    } 
+ }
+
+ focus = {
+    id = PEK_use_enemy_guns
+    icon = GFX_goal_generic_army
+    x = 7
+    y = 3
+    cost = 10
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_terraforming_in_the_military}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_learn_to_use_shovels
+            add_idea = PEK_learn_to_use_scrap_metal
+        }
+    }
+ }
+
+ focus = {
+    id = PEK_now_we_have_good_army
+    icon = GFX_goal_generic_army
+    x = 7
+    y = 4
+    cost = 70
+
+    available = {original_tag}
+    prerequisite = {focus = PEK_use_enemy_guns}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_learn_to_use_scrap_metal
+            add_idea = PEK_winter_army
+        }
     }
  }
  

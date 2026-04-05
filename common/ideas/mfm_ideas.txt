@@ -225,7 +225,7 @@ ideas = {
     }
    }
 
-   PEK_dynamic_tank_tracks = {
+   PEK_dynamic_army_training = {
     picture = GFX_goal_generic_army_tanks
     allowed = {original_tag = PEK}
 

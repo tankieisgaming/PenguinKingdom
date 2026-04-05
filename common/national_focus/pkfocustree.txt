@@ -846,6 +846,19 @@ focus_tree = {
     }
  }
  
+ focus = {
+    id = PEK_dynamic_army_fighting_terrain
+    icon = GFX_goal_generic_army
+    x = 9
+    y = 5
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_now_we_have_good_army}
+
+    completion_reward = {
+        add_ideas = PEK_dynamic_army_training 
+    }
+ }
 
  #  #    #    #   #  #   #
  ## #   # #   #   #   # #

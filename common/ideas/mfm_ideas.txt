@@ -234,7 +234,7 @@ ideas = {
     }
    }
    
-    PEK_high_quality_materials = {
+    PEK_high_quality_capital_materials = {
         picture = GFX_goal_generic_navy
 
         allowed = {
@@ -243,10 +243,21 @@ ideas = {
 
         modifier = {
           navy_capital_ship_defence_factor = 0.5
-          navy_screen_defence_factor = 0.5
         }
     }
    
+    PEK_high_quality_screen_materials = {
+        picture = GFX_goal_generic_navy
+
+        allowed = {
+           original_tag = PEK
+        }
+
+        modifier = {
+          navy_screen_defence_factor = 0.5
+        }
+    }
+
     PEK_little_ships = {
         picture = GFX_goal_generic_navy
         allowed =  {

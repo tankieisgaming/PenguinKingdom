@@ -133,6 +133,71 @@ ideas = {
    }
    }
    
+   PEK_mobilize_more_penguin = {
+    picture = GFX_goal_generic_army
+    allowed = {original_tag = PEK}
+
+    modifier = {
+        mobilization_speed = 0.1
+        conscription_factor = 0.5
+    }
+   }
+
+   PEK_train_army_better = {
+    picture = GFX_goal_generic_army
+    allowed = {original_tag = PEK}
+    
+    modifier = {
+     mobilization_speed = 0.1
+     conscription_factor = 0.5
+     training_time_factor = 0.1
+     army_org_factor = 0.15
+     org_loss_when_moving = -0.15
+     initiative_factor = 0.05
+     breakthrough_factor = 0.15
+    }
+   }
+
+   PEK_learn_to_use_shovels = {
+    picture = GFX_goal_generic_army
+    allowed = {original_tag = PEK}
+
+    modifier = {
+        mobilization_speed = 0.1
+     conscription_factor = 0.5
+     training_time_factor = 0.1
+     army_org_factor = 0.15
+     org_loss_when_moving = -0.15
+     initiative_factor = 0.05
+     dig_in_speed_factor = 0.15
+     max_dig_in_factor = 0.5
+     recon_factor_while_entrenched = 0.5
+     cas_damage_reduction = 0.2
+    }
+   }
+
+   PEK_learn_to_use_scrap_metal = {
+    picture = GFX_goal_generic_army
+    allowed = {original_tag = PEK}
+
+    modifier = {
+             mobilization_speed = 0.1
+     conscription_factor = 0.5
+     training_time_factor = 0.1
+     army_org_factor = 0.15
+     org_loss_when_moving = -0.15
+     initiative_factor = 0.05
+     dig_in_speed_factor = 0.15
+     max_dig_in_factor = 0.5
+     recon_factor_while_entrenched = 0.5
+     equipment_capture_factor = 0.5
+     equipment_conversion_speed = 0.5
+    }
+   }
+
+
+
+
    PEK_steel_driving_things_materials_quality = {
     picture = GFX_goal_generic_army_tanks
 

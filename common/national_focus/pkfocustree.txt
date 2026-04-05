@@ -724,8 +724,8 @@ focus_tree = {
  focus = {
     id = PEK_great_armor_but_very_slow
     icon = GFX_goal_generic_army_tanks
-    x = 10000000
-    y = -100
+    x = 15
+    y = 89
     cost = 5
 
     available = {original_tag = PEK}
@@ -744,8 +744,8 @@ focus_tree = {
  focus = {
     id = PEK_better_material_quality
     icon = GFX_goal_generic_army_tanks
-    x = 123
-    y = 123
+    x = 62
+    y = 8
     cost = 5
 
     available = {

@@ -11,7 +11,7 @@ ideas = {
     
 
   
-        thumbless_hands = {
+        PEK_thumbless_hands = {
             picture = factory_output
             picture = usa_great_depression
 
@@ -21,12 +21,13 @@ ideas = {
 
             modifier = {
                 industrial_capacity_factory = -0.5 
+                consumer_goods_factor = 15
             }
         }
     
 
    
-        scattered_pinguins = {
+        PEK_scattered_pinguins = {
           picture = usa_great_depression
 
 
@@ -55,15 +56,15 @@ ideas = {
 
 
     
-        what_are_factories = {
+        PEK_what_are_factories = {
         picture = GFX_goal_generic_industry
 
         allowed = {
             original_tag = PEK
         }
         modifier = {
-            industrial_capacity_factory  = -0.5
-            
+            industrial_capacity_factory  = -0.9
+            industrial_capacity_dockyard = -0.9
         }
         }
 

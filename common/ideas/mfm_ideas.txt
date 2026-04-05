@@ -222,6 +222,14 @@ ideas = {
 
     modifier = {
         supply_consumption_factor = -0.9
+    }
+   }
+
+   PEK_dynamic_tank_tracks = {
+    picture = GFX_goal_generic_army_tanks
+    allowed = {original_tag = PEK}
+
+    modifier = {
         terrain_penalty_reduction = -0.75
     }
    }

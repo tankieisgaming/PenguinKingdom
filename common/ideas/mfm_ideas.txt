@@ -243,6 +243,7 @@ ideas = {
 
         modifier = {
           navy_capital_ship_defence_factor = 0.5
+          navy_sreen_defence_factor = 0.5
         }
     }
    
@@ -308,6 +309,42 @@ ideas = {
         
     }
 
+    PEK_smarter_positioning = {
+        picture = GFX_goal_generic_navy
+        allowed = {original_tag = PEK}
+
+        modifier = {
+            positioning = 15
+            naval_coordination = 0.5
+            navy_visibility = -2.0            
+        }
+    }
+    
+    PEK_more_efficient_engine = {
+        picture = GFX_goal_generic_navy
+        allowed = {original_tag = PEK}
+
+        modifier = {
+            navy_fuel_consumption_factor = -0.2
+            naval_speed_factor = 0.15
+            positioning = 15
+        }
+    }
+
+    PEK_fighting_simulations = {
+        picture = GFX_goal_generic_navy
+        allowed = {original_tag = PEK}
+
+        modifier = {
+            navy_fuel_consumption_factor = -0.2
+            naval_speed_factor = 0.15
+            positioning = 15
+            naval_hit_chance = 0.5
+            navy_anti_air_attack_factor = 0.5
+            naval_coordination = 0.5
+            navy_visibility = -2.0   
+        }
+    }
    
   
   PEK_air_factory = {

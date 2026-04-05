@@ -293,14 +293,14 @@ focus_tree = {
     prerequisite = { focus = PEK_the_start_of_the_nation}
     available = {
         tag = PEK
-        CHI = { exists = yes }
-        NOT = { has_war_with = CHI }
+        CHL = { exists = yes }
+        NOT = { has_war_with = CHL }
     }
 
     completion_reward = {
         create_wargoal = {
             type = annex_everything
-            target = CHI
+            target = CHL
         }
         add_political_power = 50
     }
@@ -390,15 +390,15 @@ focus_tree = {
 
     available = {
         tag = PEK
-        PER = { exists = yes }
-        NOT = { has_war_with = PER }
+        PRU = { exists = yes }
+        NOT = { has_war_with = PRU }
     }
 
     completion_reward = {
 
         create_wargoal = {
             type = annex_everything
-            target = PER
+            target = PRU
         }
 
         add_war_support = 0.1
@@ -423,7 +423,7 @@ focus_tree = {
 
     available = {
         tag = PEK
-        PER = { exists = no }
+        PRU = { exists = no }
     }
 
     completion_reward = {
@@ -547,15 +547,15 @@ focus_tree = {
 
     available = {
         tag = PEK
-        AUS = { exists = yes }
-        NOT = { has_war_with = AUS }
+        AST = { exists = yes }
+        NOT = { has_war_with = AST }
     }
 
     completion_reward = {
 
         create_wargoal = {
             type = annex_everything
-            target = AUS
+            target = AST
         }
 
         add_stability = -0.05
@@ -914,12 +914,48 @@ focus_tree = {
         
          add_extra_state_shared_building_slots = 5
         }
-      add_ideas = PEK_great_penguin_navy
+      add_ideas = PEK_smarter_positioning
      }
  }
 
  focus = {
-    id = PEK_intensify_gun_training
+    id = PEK_improve_ship_engines
+    icon = GFX_goal_generic_navy
+    x = 13
+    y 3
+    cost = 10
+
+    available = {original_tag = PEK}
+    prerequisite = {focus = PEK_expand_the_navy}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_smarter_positioning 
+            add_idea = PEK_more_efficient_engine 
+        }
+    }
+ }
+
+ focus = {
+    id = PEK_real_battle_training
+    icon = GFX_goal_generic_navy
+    x = 13
+    y = 4
+    cost = 10
+
+    available = { original_tag = PEK }
+    prerequisite = {focus = PEK_improve_ship_engines}
+
+    completion_reward = {
+        swap_ideas = {
+            remove_idea = PEK_more_efficient_engine
+            add_idea = PEK_fighting_simulations
+        }
+    }
+ }
+
+ focus = {
+    id = PEK_our_great_navy
     icon = GFX_goal_generic_navy
     x = 9
     y = 3

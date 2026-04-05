@@ -347,7 +347,7 @@ focus_tree = {
     id = PEK_integrate_tha_chilean_penguins
     icon = GFX_compliance_icon 
     x = 0
-    y = 14
+    y = 2
     cost = 10
 
     available = {
@@ -373,6 +373,7 @@ focus_tree = {
                 compliance > 80
             }
     }
+    prerequisite = {focus = PEK_rally_tha_chilean_penguins}
 
     completion_reward = {
         every_state = {
@@ -453,7 +454,7 @@ focus_tree = {
     id = PEK_integrate_tha_argentinian_penguins
     icon = GFX_compliance_icon 
     x = 0
-    y = 14
+    y = 5
     cost = 10
 
     available = {
@@ -499,6 +500,7 @@ focus_tree = {
                 compliance >80
             }
     }
+    prerequisite = {focus = PEK_rally_tha_argentinian_penguins}
 
     completion_reward = {
         every_state = {
@@ -578,7 +580,7 @@ focus_tree = {
     id = PEK_integrate_tha_peruvian_penguins
     icon = GFX_compliance_icon 
     x = 0
-    y = 14
+    y = 8
     cost = 10
 
     available = {
@@ -604,6 +606,7 @@ focus_tree = {
                 compliance > 80
             }
     }
+    prerequisite = {focus = PEK_rally_tha_peruvian_penguins}
 
     completion_reward = {
         every_state = {
@@ -691,7 +694,7 @@ focus_tree = {
     id = PEK_integrate_tha_south_african_penguins
     icon = GFX_compliance_icon 
     x = 0
-    y = 14
+    y = 11
     cost = 10
 
     available = {
@@ -725,6 +728,7 @@ focus_tree = {
                 compliance > 80
             }
     }
+    prerequisite = {focus = PEK_rally_tha_south_african_penguins}
 
     completion_reward = {
         every_state = {
@@ -863,6 +867,7 @@ focus_tree = {
                 compliance >80
             }
     }
+    prerequisite = {focus = PEK_rally_tha_australian_penguins}
 
     completion_reward = {
         every_state = {
@@ -949,6 +954,7 @@ focus_tree = {
 				compliance > 80
 			}
     }
+    prerequisite = {focus = PEK_rally_tha_new_zealanders_penguins}
 
     completion_reward = {
         every_state = {

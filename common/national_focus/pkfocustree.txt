@@ -643,7 +643,7 @@ focus_tree = {
  focus = {
     id = PEK_build_the_army
     icon = GFX_goal_generic_small_arms
-    x = 9
+    x = 8
     y = 1
     cost = 4
 
@@ -684,7 +684,7 @@ focus_tree = {
     id = PEK_training_camps
     icon = GFX_goal_generic_army
     x = 7
-    y = 8
+    y = 3
     cost = 10
 
     available = {original_tag = PEK}
@@ -702,7 +702,7 @@ focus_tree = {
     id = PEK_terraforming_in_the_military
     icon = GFX_goal_generic_army 
     x = 7
-    y = 3
+    y = 4
     cost = 10
 
     available = {original_tag = PEK}
@@ -720,7 +720,7 @@ focus_tree = {
     id = PEK_use_enemy_guns
     icon = GFX_goal_generic_army
     x = 7
-    y = 3
+    y = 5
     cost = 10
 
     available = {original_tag = PEK}
@@ -737,12 +737,14 @@ focus_tree = {
  focus = {
     id = PEK_now_we_have_good_army
     icon = GFX_goal_generic_army
-    x = 7
-    y = 4
-    cost = 70
+    x = 8
+    y = 7
+    cost = 10
 
     available = {original_tag = PEK}
-    prerequisite = {focus = PEK_use_enemy_guns}
+    prerequisite = {focus = PEK_dynamic_army_fighting_terrain}
+	prerequisite = {focus = PEK_great_steel_driving_logistics}
+	
 
     completion_reward = {
         swap_ideas = {
@@ -755,8 +757,8 @@ focus_tree = {
  focus = {
     id = PEK_technology_for_steel_driving_things_who_are_fast
     icon = GFX_goal_generic_army_tanks
-    x = 11
-    y = 7
+    x = 9
+    y = 2
     cost = 10
 
     available = {original_tag = PEK}
@@ -775,13 +777,12 @@ focus_tree = {
  focus = {
     id = PEK_better_armor_but_less_speed
     icon = GFX_goal_generic_army_tanks
-    x = 124
-    y = 124
+    x = 9
+    y = 3
     cost = 5
    
     available = {original_tag = PEK}
-   
-    prerequisite = {focus = PEK_build_the_army}
+    prerequisite = {focus = PEK_technology_for_steel_driving_things_who_are_fast}
 
     completion_reward = {
         add_tech_bonus = {
@@ -796,8 +797,8 @@ focus_tree = {
  focus = {
     id = PEK_great_armor_but_very_slow
     icon = GFX_goal_generic_army_tanks
-    x = 15
-    y = 89
+    x = 9
+    y = 4
     cost = 5
 
     available = {original_tag = PEK}
@@ -816,8 +817,8 @@ focus_tree = {
  focus = {
     id = PEK_better_material_quality
     icon = GFX_goal_generic_army_tanks
-    x = 62
-    y = 8
+    x = 9
+    y = 5
     cost = 5
 
     available = {
@@ -834,8 +835,8 @@ focus_tree = {
  focus = {
     id = PEK_great_steel_driving_logistics
     icon = GFX_goal_generic_army_tanks
-    x = 7
-    y = 3
+    x = 9
+    y = 6
     cost = 5
     
     available = {original_tag = PEK}
@@ -849,11 +850,12 @@ focus_tree = {
  focus = {
     id = PEK_dynamic_army_fighting_terrain
     icon = GFX_goal_generic_army
-    x = 9
-    y = 5
+    x = 7
+    y = 6
+	cost = 10
 
     available = {original_tag = PEK}
-    prerequisite = {focus = PEK_now_we_have_good_army}
+    prerequisite = {focus = PEK_use_enemy_guns}
 
     completion_reward = {
         add_ideas = PEK_dynamic_army_training 
@@ -921,12 +923,12 @@ focus_tree = {
  focus = {
     id = PEK_improve_ship_engines
     icon = GFX_goal_generic_navy
-    x = 13
-    y 3
+    x = 11
+    y = 2
     cost = 10
 
     available = {original_tag = PEK}
-    prerequisite = {focus = PEK_expand_the_navy}
+    prerequisite = {focus = PEK_start_the_navy}
 
     completion_reward = {
         swap_ideas = {
@@ -939,8 +941,8 @@ focus_tree = {
  focus = {
     id = PEK_real_battle_training
     icon = GFX_goal_generic_navy
-    x = 13
-    y = 4
+    x = 11
+    y = 3
     cost = 10
 
     available = { original_tag = PEK }
@@ -957,11 +959,13 @@ focus_tree = {
  focus = {
     id = PEK_our_great_navy
     icon = GFX_goal_generic_navy
-    x = 9
-    y = 3
+    x = 12
+    y = 6
     cost = 10
 
     available = {original_tag = PEK}
+	prerequisite = {focus = PEK_better_materials_capital_ships}
+	prerequisite = {focus = PEK_capital_ships_buildup}
 
     completion_reward = {
         add_ideas = PEK_great_penguin_navy
@@ -969,27 +973,44 @@ focus_tree = {
  }
 
  focus = {
-    id = PEK_better_materials
+    id = PEK_better_materials_little_ships
     icon = GFX_goal_generic_navy
-    x = 10
-    y = 3
+    x = 11
+    y = 4
     cost = 14
 
     available = {original_tag = PEK}
+	prerequisite = {focus = PEK_real_battle_training}
 
     completion_reward = {
-        add_ideas = PEK_high_quality_materials
+        add_ideas = PEK_high_quality_screen_materials
+    }
+ }
+ 
+ focus = {
+    id = PEK_better_materials_capital_ships
+    icon = GFX_goal_generic_navy
+    x = 11
+    y = 5
+    cost = 14
+
+    available = {original_tag = PEK}
+	prerequisite = {focus = PEK_better_materials_little_ships}
+
+    completion_reward = {
+        add_ideas = PEK_high_quality_capital_materials
     }
  }
 
  focus = {
     id = PEK_submarines_expansions
     icon = GFX_goal_generic_navy
-    x = 9
-    y = 4
+    x = 13
+    y = 3
     cost = 5
 
     available = {original_tag = PEK}
+	prerequisite = {focus = PEK_expand_the_navy}
 
     completion_reward = {
         add_tech_bonus = {
@@ -1005,11 +1026,12 @@ focus_tree = {
  focus = {
     id = PEK_capital_ships_buildup
     icon = GFX_goal_generic_navy
-    x = 10
-    y = 4
+    x = 13
+    y = 5
     cost = 20
 
     available = {original_tag = PEK}
+	prerequisite = {focus = PEK_screens_buildup}
 
     completion_reward = {
         add_tech_bonus = {
@@ -1038,11 +1060,12 @@ focus_tree = {
  focus = {
     id = PEK_screens_buildup
     icon = GFX_goal_generic_navy
-    x = 10
-    y = 5
+    x = 13
+    y = 4
     cost = 5
 
     available = {original_tag = PEK}
+	prerequisite = {focus = PEK_submarines_expansions}
 
     completion_reward = {
         add_tech_bonus = {
@@ -1261,7 +1284,7 @@ focus_tree = {
     id = PEK_bigger_bombs_on_bigger_planes
     icon = GFX_goal_generic_air
     x = 18
-    y = 5
+    y = 6
     cost = 5
 
     available = {original_tag = PEK}
@@ -1294,10 +1317,12 @@ focus_tree = {
     id = PEK_nuclear_research
     icon = GFX_goal_generic_construct_nuclear_reactor
     x = 12
-    y = 7
+    y = 9
     cost = 10
 
     prerequisite = { focus = PEK_bigger_bombs_on_bigger_planes }
+	prerequisite = {focus = PEK_our_great_navy}
+	prerequisite = {focus = PEK_now_we_have_good_army}
     available = { original_tag = PEK }
 
     completion_reward = {
@@ -1322,7 +1347,7 @@ focus_tree = {
     id = PEK_secret_underground_stash
     icon = GFX_goal_generic_construct_nuclear_reactor
     x = 12
-    y = 8
+    y = 10
     cost = 15
 
     prerequisite = {

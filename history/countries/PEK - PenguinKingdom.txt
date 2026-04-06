@@ -75,8 +75,8 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Ahmed Ben Bella"
-	desc = ""
+	name = "pinguinking"
+	desc = "The ultimate pinguin"
 	picture = "pinguinking.dds"
 	ideology = despotism
 	traits = {

@@ -12,8 +12,6 @@ set_technology = {
 add_ideas = {
 	PEK_what_are_factories
 	PEK_thumbless_hands
-	PEK_scattered_pinguins
-	PEK_wasted_infrastructure
 }
 
 set_convoys = 20

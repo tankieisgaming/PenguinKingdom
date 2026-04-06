@@ -12,7 +12,6 @@ ideas = {
 
   
         PEK_thumbless_hands = {
-            picture = factory_output
             picture = usa_great_depression
 
             allowed = {
@@ -21,7 +20,41 @@ ideas = {
 
             modifier = {
                 industrial_capacity_factory = -0.5 
+                industrial_capacity_dockyard = -0.5
                 consumer_goods_factor = 0.75
+            }
+        }
+
+        PEK_adaptive_learning = {
+          picture = usa_great_depression
+          allowed = {original_tag = PEK}
+
+          modifier = {
+            industrial_capacity_factory = -0.15
+            industrial_capacity_dockyard = -0.15
+            consumer_goods_factor = 0.5
+          }
+        }
+
+        PEK_modifying_the_machines = {
+            picture = usa_great_depression
+            allowed = {original_tag = PEK}
+
+            modifier = {
+                industrial_capacity_factory = 0.05
+                industrial_capacity_dockyard = 0.05
+                consumer_goods_factor = 0.05
+            }
+        }
+
+        PEK_teaching_methods = {
+            picture = usa_great_depression 
+            allowed = {original_tag = PEK}
+
+            modifier = {
+                industrial_capacity_dockyard = 0.25
+                industrial_capacity_factory = 0.25
+                consumer_goods_factor = -0.2
             }
         }
     
@@ -37,7 +70,7 @@ ideas = {
             }
 
            modifier = {
-            recruitable_population_factor = -0.6
+            recruitable_population = -0.6
            }
     }
 
@@ -63,10 +96,51 @@ ideas = {
             original_tag = PEK
         }
         modifier = {
-            industrial_capacity_factory  = -0.9
-            industrial_capacity_dockyard = -0.9
+                production_speed_arms_factory_factor = -0.9
+                production_speed_dockyard_factor = -0.9
         }
         }
+
+        PEK_start_exploring_factories = {
+            picture = GFX_goal_generic_industry
+            allowed = {original_tag = PEK}
+
+            modifier = {
+                production_speed_arms_factory_factor = -0.6
+                production_speed_dockyard_factor = -0.6
+            }
+        }
+
+        PEK_visit_other_countries_to_look_at_factory_construction = {
+            picture = GFX_goal_generic_industry
+            allowed = {original_tag = PEK}
+
+            modifier = {
+                production_speed_arms_factory_factor = -0.10
+                production_speed_dockyard_factor = -0.10
+            }
+        }
+
+        PEK_implement_own_ideas_on_factory_construction = {
+           picture = GFX_goal_generic_industry
+           allowed = {original_tag = PEK}
+
+           modifier = {
+            production_speed_dockyard_factor = 0.05
+            production_speed_arms_factory_factor = 0.05
+           }
+        }
+
+        PEK_teach_penguins_about_factory_construction = {
+            picture = GFX_goal_generic_industry
+            allowed = {original_tag = PEK}
+
+            modifier = {
+            production_speed_dockyard_factor = 0.45
+            production_speed_arms_factory_factor = 0.45
+            }
+        }
+
 
     PEK_reunified_pinguins = {
          picture = generic_manpower
@@ -111,28 +185,29 @@ ideas = {
    
 
    modifier = {
-    dig_in_speed_factor = 0.05
-	max_dig_in_factor = 0.1
-	training_time_factor = -0.1
+    dig_in_speed_factor = 0.15
+	max_dig_in_factor = 0.5
+	training_time_factor = 0.1
 	mobilization_speed = 0.1
-	conscription_factor = 0.1
-	cas_damage_reduction =  0.15
-	winter_attrition_factor = -0.15
-	army_org_factor = 0.1
-	special_forces_cap = 0.15
-	breakthrough_factor = 0.05
-	special_forces_out_of_supply_factor = -0.1
-	equipment_capture_factor = 0.3
-	equipment_conversion_speed = 0.3
-	production_lack_of_resource_penalty_factor = -0.15
-	supply_combat_penalties_on_core_factor = -0.15
+	conscription_factor = 0.5
+	cas_damage_reduction =  0.2
+	army_org_factor = 0.15
+	breakthrough_factor = 0.15
+	equipment_capture_factor = 0.5
+	equipment_conversion_speed = 0.5
 	org_loss_when_moving = -0.15
-	recon_factor_while_entrenched = 0.1
-	army_attack_speed_factor = 0.1
-	intel_from_combat_factor = 0.1
+	recon_factor_while_entrenched = 0.5
 	initiative_factor = 0.02
+    special_forces_cap = 0.15
+    special_forces_out_of_supply_factor = -0.1
+    winter_attrition_factor = -0.15
+    intel_from_combat_factor = 0.1
+    production_lack_of_resource_penalty_factor = -0.15
+    supply_combat_penalties_on_core_factor = -0.15
+    army_attack_speed_factor = 0.1
    }
    }
+
    
    PEK_mobilize_more_penguin = {
     picture = GFX_goal_generic_army
@@ -170,6 +245,7 @@ ideas = {
      army_org_factor = 0.15
      org_loss_when_moving = -0.15
      initiative_factor = 0.05
+     breakthrough_factor = 0.15
      dig_in_speed_factor = 0.15
      max_dig_in_factor = 0.5
      recon_factor_while_entrenched = 0.5
@@ -182,15 +258,17 @@ ideas = {
     allowed = {original_tag = PEK}
 
     modifier = {
-             mobilization_speed = 0.1
+     mobilization_speed = 0.1
      conscription_factor = 0.5
      training_time_factor = 0.1
      army_org_factor = 0.15
      org_loss_when_moving = -0.15
      initiative_factor = 0.05
+     breakthrough_factor = 0.15
      dig_in_speed_factor = 0.15
      max_dig_in_factor = 0.5
      recon_factor_while_entrenched = 0.5
+     cas_damage_reduction = 0.2
      equipment_capture_factor = 0.5
      equipment_conversion_speed = 0.5
     }
@@ -231,7 +309,7 @@ ideas = {
     allowed = {original_tag = PEK}
 
     modifier = {
-        terrain_penalty_reduction = -0.75
+        terrain_penalty_reduction = 0.75
     }
    }
    
@@ -340,6 +418,9 @@ ideas = {
             navy_fuel_consumption_factor = -0.2
             naval_speed_factor = 0.15
             positioning = 15
+            positioning = 15
+            naval_coordination = 0.5
+            navy_visibility = -2.0   
         }
     }
 
